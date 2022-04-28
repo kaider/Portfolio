@@ -1596,7 +1596,7 @@ progress {
 
   .col-xl-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 43%;
   }
 
   .col-xl-5 {
@@ -1616,7 +1616,7 @@ progress {
 
   .col-xl-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 57%;
   }
 
   .col-xl-9 {
@@ -7544,6 +7544,11 @@ textarea.form-control-lg {
   margin-bottom: 0 !important;
 }
 
+.mb-0a {
+  margin-bottom: 0 !important;
+  padding: 0rem .75rem 0rem 0rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem !important;
 }
@@ -7961,7 +7966,7 @@ textarea.form-control-lg {
 
 .text-black-50 {
   --bs-text-opacity: 1;
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgba(0, 0, 0, 0.7) !important;
 }
 
 .text-white-50 {
@@ -9884,7 +9889,7 @@ textarea.form-control-lg {
   }
 
   .mb-lg-5 {
-    margin-bottom: 3rem !important;
+    margin-bottom: 7rem !important;
   }
 
   .mb-lg-auto {
@@ -11610,24 +11615,27 @@ body {
   }
 }
 
-.about-section {
+/* .about-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
   margin-bottom: 5rem;
-}
+} */
 
 .projects-section {
   padding: 10rem 0;
 }
-.projects-section .featured-text {
-  padding: 2rem;
+.projects-section .featured-text-right {
+  padding: 0 0 0 2rem;
+}
+.projects-section .featured-text-left {
+  padding: 0 1.5rem 0 0;
 }
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+/*    border-left: 0.5rem solid #64a19d; */
   }
 }
 .projects-section .project-text {
@@ -11643,6 +11651,17 @@ body {
     border-width: 0.25rem;
     width: 30%;
   }
+}
+
+.UXCaseTitle {
+  margin: 1rem 0 2rem 0 !important;
+  font-weight: 1000;
+  letter-spacing: 0.25px;
+}
+
+.UXCaseImg {
+  border-radius: 1rem !important;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.15)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.35));
 }
 
 .signup-section {
