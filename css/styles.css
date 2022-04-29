@@ -2995,10 +2995,14 @@ textarea.form-control-lg {
   z-index: 3;
 }
 
+.buttonNav {
+ margin: 0 4rem 0 4rem;
+}
+
 .hvr-sweep {
   text-decoration: none;
-  padding: 3rem 0 1rem 0;
-  font-weight: 600;
+  padding: 0.5rem 0 1rem 0;
+  font-weight: 500;
   font-size: 110%;
   color: rgb(17,17,17);
   border-bottom: 3px solid rgb(17,17,17);
@@ -11624,9 +11628,7 @@ body {
 
 .masthead {
   position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
+  width: auto;
   padding: 15rem 0;
   background: url("../assets/img/bg_main.png");
   background-position: center;
@@ -11652,7 +11654,7 @@ body {
 }
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
+    height: 88vh;
     padding: 0;
   }
   .masthead h1, .masthead .h1 {
