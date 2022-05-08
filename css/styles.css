@@ -58,7 +58,7 @@
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: Poppins, Lato, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-font-monospace: 'Poppins', 'Lato', Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
@@ -2171,15 +2171,11 @@ progress {
   opacity: 0.65;
 }
 
-.buttonNav {
- margin: 0 4rem 0 4rem;
-}
-
 .hvr-sweep {
   text-decoration: none;
-  padding: 0.5rem 0 1rem 0;
-  font-weight: 500;
-  font-size: 110%;
+  padding: 1.5rem 0.5rem .75rem 0;
+  font-weight: 600;
+  font-size: 1rem;
   color: rgb(17,17,17);
   border-bottom: 3px solid rgb(17,17,17);
   letter-spacing: 0.05rem;
@@ -7094,6 +7090,15 @@ progress {
   line-height: 2 !important;
 }
 
+.text-nav {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.15px;
+}
+
 .text-start {
   text-align: left !important;
 }
@@ -9130,7 +9135,7 @@ progress {
   }
 
   .mb-lg-5 {
-    margin-bottom: 7rem !important;
+    margin-bottom: 5rem !important;
   }
 
   .mb-lg-auto {
@@ -10728,6 +10733,7 @@ body {
 #mainNav {
   min-height: 3.5rem;
   background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10761,6 +10767,7 @@ body {
     padding-bottom: 0;
     border-bottom: none;
     background-color: transparent;
+    box-shadow: none;
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -10779,10 +10786,11 @@ body {
     color: #fff;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: rgba(255,255,255, 0.85);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #000;
+    color: rgba(255,255,255, 0.85);
   }
   #mainNav.navbar-shrink .nav-link {
     color: #000;
@@ -10845,6 +10853,22 @@ body {
   }
 }
 
+.aboutMeTag {
+  font-family: 'IBM Plex Serif' !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.25px;
+}
+
+.aboutMeBody {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .about-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
@@ -10862,6 +10886,13 @@ body {
 .projects-section .featured-text-left {
   padding: 0 1.5rem 0 0;
 }
+
+@media (max-width: 991.98px) {
+  .featured-text-right {
+    padding: 0 !important;
+  }
+}
+
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
@@ -10885,13 +10916,21 @@ body {
 
 .UXCaseTitle {
   margin: 1rem 0 2rem 0 !important;
-  font-weight: 1000;
+  font-family: "Poppins";
+  font-weight: 600;
   letter-spacing: 0.25px;
+  font-size: 1.75rem;
 }
 
 .UXCaseImg {
-  border-radius: 1rem !important;
+  border-radius: 0.5rem !important;
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.15)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.35));
+}
+
+@media (max-width: 992px) {
+  .UXCaseImg {
+    margin-bottom: 6rem !important;
+  }
 }
 
 .contact-section {
