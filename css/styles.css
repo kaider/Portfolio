@@ -11033,9 +11033,9 @@ img.UXCaseImg:hover {
 } */
 
 .UXCaseLabel {
-  display: flex;
   flex-direction: row;
   align-items: center;
+  display: flex;
 }
 
 p.UXCaseTag {
