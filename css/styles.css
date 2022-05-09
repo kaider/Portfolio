@@ -11032,13 +11032,13 @@ img.UXCaseImg:hover {
   }
 } */
 
-.UXCaseLabel {
+div.UXCaseLabel {
   flex-direction: row;
   align-items: center;
   display: flex;
 }
 
-p.UXCaseTag {
+.UXCaseLabel .UXCaseTag {
   color: #9D9D9D;
   border: 1px solid #9D9D9D;
   font-family: Lato;
