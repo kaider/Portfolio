@@ -10912,14 +10912,15 @@ body {
 }
 
 .projects-section .featured-text-right {
-  padding: 0 0 0 6rem;
+  padding: 0 0 0 7rem;
 }
 .projects-section .featured-text-left {
-  padding: 0 6rem 0 0;
+  padding: 0 7rem 0 0;
 }
 
 @media (max-width: 991.98px) {
-  .featured-text-right, feature-text-left {
+  .projects-section .featured-text-right,
+  .projects-section .feature-text-left {
     padding: 0 !important;
   }
 }
@@ -10929,9 +10930,9 @@ body {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #7EA19F;
   }
-} */
+}
 
-/* .projects-section .project-text {
+ .projects-section .project-text {
   padding: 3rem;
   font-size: 90%;
 }
@@ -10986,14 +10987,14 @@ body {
 .UXCaseTitle {
   margin: 2rem 0 1.5rem 0;
   font-family: "Poppins";
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.25px;
-  font-size: 1.75rem;
+  font-size: 1.55rem;
 }
 
 @media (max-width: 992px) {
   .UXCaseTitle {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     margin: 1rem 0 0.5rem 0;
   }
 }
