@@ -10906,17 +10906,11 @@ body {
   padding: 8rem 0 2rem 0;
 }
 
-@media (max-width: 991.98px) {
-  .projects-section {
-    padding: 5rem 0 0 0;
-  }
-}
-
 .projects-section .featured-text-right {
-  padding: 0 0 0 7rem;
+  padding: 0 0 0 6rem;
 }
 .projects-section .featured-text-left {
-  padding: 0 7rem 0 0;
+  padding: 0 6rem 0 0;
 }
 
 @media (max-width: 991.98px) {
@@ -10996,12 +10990,12 @@ body {
 @media (max-width: 992px) {
   .UXCaseTitle {
     font-size: 1.3rem;
-    margin: 1rem 0 0.5rem 0;
+    margin: 1rem 0 0.75rem 0;
   }
 }
 
 img.UXCaseImg {
-  border-radius: 0.6rem !important;
+  cursor: pointer;
   width: 100%;
   height: auto;
   -webkit-animation-delay: 0.25s !important;
@@ -11050,6 +11044,13 @@ div.UXCaseLabel {
   border-radius: 5px;
   padding: 4px 10px;
   margin: 0 8px 0 0;
+}
+
+@media (max-width:1200px) {
+  .UXCaseTag {
+    padding: 4px 4px !important;
+    margin: 0 4px 0 0 !important;
+  }
 }
 
 .contact-section {
