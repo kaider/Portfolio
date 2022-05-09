@@ -11032,7 +11032,7 @@ img.UXCaseImg:hover {
   }
 } */
 
-p.UXCaseLabel {
+.UXCaseLabel {
   display: flex;
   flex-direction: row;
   align-items: center;
