@@ -2173,7 +2173,7 @@ progress {
 
 .hvr-sweep {
   text-decoration: none;
-  padding: 1.5rem 0.5rem .75rem 0;
+  padding: 0.5rem 0.5rem .75rem 0;
   font-weight: 600;
   font-size: 1rem;
   color: rgb(17,17,17);
@@ -7202,7 +7202,7 @@ progress {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #7B7B7B !important;
 }
 
 .text-black-50 {
@@ -10907,7 +10907,7 @@ body {
 
 @media (max-width: 991.98px) {
   .projects-section {
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
   }
 }
 
@@ -10920,6 +10920,12 @@ body {
 
 @media (max-width: 991.98px) {
   .featured-text-right {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .featured-text-left {
     padding: 0 !important;
   }
 }
@@ -10946,6 +10952,42 @@ body {
   }
 } */
 
+.leadingLine,
+.leadingLine-white {
+    width: 100%;
+    letter-spacing: 1px;
+}
+.leadingLine::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background: #7B7B7B;
+    vertical-align: top;
+    margin-top: 11px;
+    margin-right: 10px;
+}
+.leadingLine-white::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background: #7B7B7B;
+    vertical-align: top;
+    margin-top: 11px;
+    margin-right: 10px;
+}
+
+.UXCase {
+  margin: 0 0 12.5rem 0;
+}
+
+@media (max-width: 992px) {
+  .UXCase {
+    margin: 0 0 8rem 0;
+  }
+}
+
 .UXCaseTitle {
   margin: 2rem 0 1.5rem 0;
   font-family: "Poppins";
@@ -10956,15 +10998,61 @@ body {
 
 @media (max-width: 992px) {
   .UXCaseTitle {
-    font-size: 1.5rem;
-    margin: 0 0 0.5rem 0;
+    font-size: 1.35rem;
+    margin: 1rem 0 0.5rem 0;
   }
 }
 
 .UXCaseImg {
-  margin-bottom: 5rem !important;
-  border-radius: 0.5rem !important;
-  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.15)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.35));
+  border-radius: 0.6rem !important;
+  width: 100%;
+  height: auto;
+  -webkit-animation-delay: 0.25s !important;
+  animation-delay: 0.25s !important;
+  -webkit-transition: all 0.65s;
+  -o-transition: all 0.65s;
+  transition: all 0.65s;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.15)) drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25)); 
+}
+
+.UXCaseImg:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.35)); 
+}
+
+.UXCaseImg-right {
+  padding-left: 60px;
+}
+
+.UXCaseImg-left {
+  padding-right: 60px;
+}
+
+@media (max-width: 992px) {
+  .UXCaseImg-left, .UXCaseImg-right {
+    padding: 0px !important;
+  }
+}
+
+.UXCaseLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.UXCaseTag {
+  color: #9D9D9D;
+  border: 1px solid #9D9D9D;
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.25px;
+  border-radius: 5px;
+  padding: 4px 10px;
+  margin: 0 8px 0 0;
 }
 
 .contact-section {
