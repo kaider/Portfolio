@@ -11121,7 +11121,7 @@ div.UXCaseLabel {
   -ms-flex-align: center;
   align-items: center;
   background-color: #dfb468;
-  background-image: url("https://uploads-ssl.webflow.com/59c5c3e797139c000117aa12/59ed557d19032000013fe8c4_side-project-opener_flipped.jpg");
+  background-image: url("/assets/img/bg_main.png");
   background-position: 50% 72%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11176,7 +11176,7 @@ div.UXCaseLabel {
   -ms-flex-align: start;
   align-items: flex-start;
   background-color: #e8cf7d;
-  background-image: url("https://uploads-ssl.webflow.com/59c5c3e797139c000117aa12/59ed5d4141b4090001b6004a_cover.jpg");
+  background-image: url("/assets/img/bg_main.png");
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -11305,11 +11305,38 @@ div.UXCaseLabel {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    background-image: url("https://uploads-ssl.webflow.com/59c5c3e797139c000117aa12/59eceacaf4f8560001ca5755_cover.jpg"), -webkit-gradient(linear, left top, left bottom, from(#e8cf7d), to(#e8cf7d));
-    background-image: url("https://uploads-ssl.webflow.com/59c5c3e797139c000117aa12/59eceacaf4f8560001ca5755_cover.jpg"), linear-gradient(180deg, #e8cf7d, #e8cf7d);
+    background-image: url('/assets/img/bg_main.png'), -webkit-gradient(linear, left top, left bottom, from(#e8cf7d), to(#e8cf7d));
+    background-image: url('/assets/img/bg_main.png'), linear-gradient(180deg, #e8cf7d, #e8cf7d);
     background-position: 71% 50%, 0px 0px;
     background-size: cover, auto;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed, scroll;
   }
+}
+
+.testEmpty {
+  height: 200vh;
+  background-color: lightgray;
+}
+
+/* .openingtitles {
+  display: block;
+  margin-top: -16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
