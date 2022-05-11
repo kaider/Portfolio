@@ -10913,15 +10913,15 @@ body {
   padding: 0 6rem 0 0;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
  .projects-section .featured-text-left {
-    padding: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
  .projects-section .featured-text-right {
-    padding: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important
   }
 }
 
