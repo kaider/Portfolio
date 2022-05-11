@@ -3406,7 +3406,7 @@ progress {
   font-size: 26px;
   text-decoration: none;
   white-space: nowrap;
-  font-family: 'IBM Plex Serif';
+  font-family: 'IBM Plex Serif', sans-serif;
   font-style: normal;
   font-weight: 600;
 }
@@ -7086,7 +7086,7 @@ progress {
 }
 
 .text-nav {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
@@ -10835,7 +10835,7 @@ body {
   background-size: cover;
 }
 .masthead h1, .masthead .h1 {
-  font-family: 'IBM Plex Serif' !important;
+  font-family: 'IBM Plex Serif', sans-serif !important;
   font-weight: 700;
   font-size: 4rem;
   letter-spacing: 0.05rem !important;
@@ -10872,7 +10872,7 @@ body {
 }
 
 .aboutMeTag {
-  font-family: 'IBM Plex Serif' !important;
+  font-family: 'IBM Plex Serif', sans-serif !important;
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 2.15rem;
@@ -10888,7 +10888,7 @@ body {
 }
 
 .aboutMeBody {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -10981,7 +10981,7 @@ body {
 
 .UXCaseTitle {
   margin: 2rem 0 1.5rem 0;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   letter-spacing: 0.25px;
   font-size: 1.55rem;
@@ -11036,7 +11036,7 @@ div.UXCaseLabel {
 .UXCaseLabel .UXCaseTag {
   color: #9D9D9D;
   border: 1px solid #9D9D9D;
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
@@ -11092,4 +11092,224 @@ div.UXCaseLabel {
 
 .footer {
   padding: 5rem 0;
+}
+
+
+.fixed-image-section {
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  max-width: 100%;
+  margin: auto;
+  padding: auto;
+  clear: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #dfb468;
+  background-image: url("https://uploads-ssl.webflow.com/59c5c3e797139c000117aa12/59ed557d19032000013fe8c4_side-project-opener_flipped.jpg");
+  background-position: 50% 72%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-section {
+  overflow: hidden;
+  margin-top: 32px;
+  margin-right: 24px;
+  margin-left: 24px;
+  padding: 200px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.hero-section.fixed-image-section {
+  margin: 0px;
+  padding-top: 224px;
+  padding-bottom: 224px;
+  background-color: #ffde3b;
+  background-image: none;
+}
+
+.hero-section.fixed-image-section.home {
+  position: static;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 90vh;
+  margin: auto;
+  padding: auto;
+  float: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background-color: #e8cf7d;
+  background-image: url("https://uploads-ssl.webflow.com/59c5c3e797139c000117aa12/59ed5d4141b4090001b6004a_cover.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 991px) {
+  .fixed-image-section {
+    padding: 241px;
+  }
+
+  .hero-section {
+    display: block;
+    margin-right: 21px;
+    margin-left: 21px;
+    padding: 140px;
+  }
+
+  .project-section-2 {
+    height: 600px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-section-1 {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .fixed-image-section {
+    height: 100vh;
+    padding: 111px;
+  }
+
+  .hero-section {
+    position: static;
+    display: block;
+    padding: 136px 16px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .project-section-1 {
+    margin-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .fixed-image-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70vh;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: auto 0px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .fixed-image-section.routr {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70vh;
+    margin-right: 0px;
+    margin-left: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .hero-section {
+    display: block;
+    width: 90%;
+    height: 300px;
+    margin-top: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 200px 0px 140px;
+  }
+
+  .hero-section.fixed-image-section {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 63px 23px 296px;
+  }
+
+  .hero-section.fixed-image-section.home {
+    display: block;
+    overflow: auto;
+    height: 70vh;
+    padding-top: 30%;
+    padding-bottom: 0%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    background-image: url("https://uploads-ssl.webflow.com/59c5c3e797139c000117aa12/59eceacaf4f8560001ca5755_cover.jpg"), -webkit-gradient(linear, left top, left bottom, from(#e8cf7d), to(#e8cf7d));
+    background-image: url("https://uploads-ssl.webflow.com/59c5c3e797139c000117aa12/59eceacaf4f8560001ca5755_cover.jpg"), linear-gradient(180deg, #e8cf7d, #e8cf7d);
+    background-position: 71% 50%, 0px 0px;
+    background-size: cover, auto;
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed, scroll;
+  }
 }
