@@ -11058,6 +11058,16 @@ div.UXCaseLabel {
   }
 }
 
+UXCaseButton {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  UXCaseButton {
+    margin-top: 1.5rem !important;
+  }
+}
+
 .contact-section {
   padding-top: 5rem;
 }
