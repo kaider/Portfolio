@@ -11320,8 +11320,8 @@ div.UXCaseLabel {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    background-image: url('/assets/img/bg_main.png'), -webkit-gradient(linear, left top, left bottom, from(#e8cf7d), to(#e8cf7d));
-    background-image: url('/assets/img/bg_main.png'), linear-gradient(180deg, #e8cf7d, #e8cf7d);
+    background-image: url('../assets/img/bg_main.png'), -webkit-gradient(linear, left top, left bottom, from(#e8cf7d), to(#e8cf7d));
+    background-image: url('../assets/img/bg_main.png'), linear-gradient(180deg, #e8cf7d, #e8cf7d);
     background-position: 71% 50%, 0px 0px;
     background-size: cover, auto;
     background-repeat: no-repeat, repeat;
