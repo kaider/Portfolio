@@ -11058,12 +11058,12 @@ div.UXCaseLabel {
   }
 }
 
-UXCaseButton {
-  margin-bottom: 4rem;
+.UXCaseButton {
+  margin-top: 0rem;
 }
 
 @media (max-width: 768px) {
-  UXCaseButton {
+  .UXCaseButton {
     margin-top: 1.5rem !important;
   }
 }
