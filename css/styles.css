@@ -10913,9 +10913,14 @@ body {
   padding: 0 6rem 0 0;
 }
 
-@media (max-width: 991.98px) {
-  .projects-section .featured-text-right,
-  .projects-section .feature-text-left {
+@media (max-width: 992px) {
+  .featured-text-left {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .featured-text-right {
     padding: 0 !important;
   }
 }
@@ -11050,6 +11055,16 @@ div.UXCaseLabel {
   .UXCaseTag {
     padding: 4px 4px !important;
     margin: 0 4px 0 0 !important;
+  }
+}
+
+.UXCaseButton {
+  margin-top: 0rem;
+}
+
+@media (max-width: 768px) {
+  .UXCaseButton {
+    margin-top: 1.5rem !important;
   }
 }
 
