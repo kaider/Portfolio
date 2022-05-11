@@ -11136,7 +11136,7 @@ div.UXCaseLabel {
   -ms-flex-align: center;
   align-items: center;
   background-color: #dfb468;
-  background-image: url("/assets/img/bg_main.png");
+  background-image: url("../assets/img/bg_main.png");
   background-position: 50% 72%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11191,7 +11191,7 @@ div.UXCaseLabel {
   -ms-flex-align: start;
   align-items: flex-start;
   background-color: #e8cf7d;
-  background-image: url("/assets/img/bg_main.png");
+  background-image: url("../assets/img/bg_main.png");
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
