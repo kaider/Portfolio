@@ -10914,8 +10914,8 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  .projects-section .featured-text-right,
-  .projects-section .feature-text-left {
+  .featured-text-right,
+  .featured-text-left {
     padding: 0 !important;
   }
 }
