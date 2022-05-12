@@ -1,0 +1,9 @@
+.navbar .dropdown-menu{
+    right: 0px;
+    width: fit-content;
+    left: unset;
+}
+
+.mainDropdown {
+    width: max-content;
+}

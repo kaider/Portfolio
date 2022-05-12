@@ -91,6 +91,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  min-width: 350px;
 }
 
 hr {
@@ -10733,30 +10734,25 @@ body {
   letter-spacing: 0.0625em;
 }
 
-#mainNav,
-#mainNavUX {
+#mainNav {
   min-height: 3.5rem;
   background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
-#mainNav .navbar-toggler,
-#mainNavUX .navbar-toggler {
+#mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
   color: var(--bs-gray-900);
   border: 1px solid var(--bs-gray-900);
 }
 #mainNav .navbar-toggler:focus,
-#mainNav .navbar-toggler:active,
-#mainNavUX .navbar-toggler:focus,
-#mainNavUX .navbar-toggler:active {
+#mainNav .navbar-toggler:active {
   outline: none;
   color: var(--bs-gray-500);
   border: 1px solid var(--bs-gray-200);
   background-color: var(--bs-gray-200);
 }
-#mainNav .navbar-brand,
-#mainNavUX .navbar-brand {
+#mainNav .navbar-brand {
   color: var(--bs-gray-900);
   font-weight: 600;
   padding: 0.9rem 0;
@@ -10764,10 +10760,7 @@ body {
 
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:active,
-#mainNav .navbar-brand:hover,
-#mainNavUX .navbar-brand:focus,
-#mainNavUX .navbar-brand:active,
-#mainNavUX .navbar-brand:hover {
+#mainNav .navbar-brand:hover {
   color: var(--bs-gray-700);
   font-weight: 700;
 }
@@ -10778,14 +10771,13 @@ body {
   color: #7EA19F;
 }
 
-#mainNavUX.navbar-shrink .navbar-brand:focus,
-#mainNavUX.navbar-shrink .navbar-brand:active,
-#mainNavUX.navbar-shrink .navbar-brand:hover {
-  color: #434343;
+.caseStudyVTP .navbar-shrink .navbar-brand:focus,
+.caseStudyVTP .navbar-shrink .navbar-brand:active,
+.caseStudyVTP .navbar-shrink .navbar-brand:hover {
+  color: #434343 !important;
 }
 
-#mainNav .navbar-nav .nav-item:hover,
-#mainNavUX .navbar-nav .nav-item:hover {
+#mainNav .navbar-nav .nav-item:hover{
   color: fade(#fff, 80%);
   outline: none;
   background-color: transparent;
@@ -10794,15 +10786,12 @@ body {
 /*  letter-spacing: 0.25px; */
 }
 #mainNav .navbar-nav .nav-item:active,
-#mainNav .navbar-nav .nav-item:focus,
-#mainNavUX .navbar-nav .nav-item:active,
-#mainNavUX .navbar-nav .nav-item:focus {
+#mainNav .navbar-nav .nav-item:focus {
   outline: none;
   background-color: transparent;
 }
 @media (min-width: 992px) {
-  #mainNav,
-  #mainNavUX {
+  #mainNav {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
@@ -10811,32 +10800,26 @@ body {
     transition: background-color 0.3s ease-in-out;
   }
   
-  #mainNav .nav-link,
-  #mainNavUX .nav-link {
+  #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
     color: rgb(17, 17, 17);
   }
-  #mainNav .nav-link:hover,
-  #mainNavUX .nav-link:hover {
+  #mainNav .nav-link:hover {
     color: rgba(17, 17, 17, 0.75);
   }
-  #mainNav .nav-link:active,
-  #mainNavUX .nav-link:active {
+  #mainNav .nav-link:active {
     color: #fff;
   }
-  #mainNav.navbar-shrink,
-  #mainNavUX.navbar-shrink {
+  #mainNav.navbar-shrink {
     background-color: rgba(255,255,255, 0.85);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   }
   
-  #mainNav.navbar-shrink .navbar-brand,
-  #mainNavUX.navbar-shrink .navbar-brand {
+  #mainNav.navbar-shrink .navbar-brand {
     color: var(--bs-gray-900);
   }
-  #mainNav.navbar-shrink .nav-link,
-  #mainNavUX.navbar-shrink .nav-link {
+  #mainNav.navbar-shrink .nav-link {
     color: #000;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
@@ -10853,16 +10836,15 @@ body {
     border-bottom: 0.5rem solid #7EA19F;
   }
 
-  #mainNavUX.navbar-shrink .nav-link:hover {
-    color: #434343;
+  .caseStudyVTP .navbar-shrink .nav-link:hover {
+    color: #434343 !important;
   }
-  #mainNavUX.navbar-shrink .nav-link:active {
-    color: #434343;
+  .caseStudyVTP .navbar-shrink .nav-link:active {
+    color: #434343 !important;
   }
-  #mainNavUX.navbar-shrink .nav-link.active {
-    color: #434343;
-    outline: none;
-    border-bottom: 0.5rem solid #434343;
+  .caseStudyVTP .navbar-shrink .nav-link.active {
+    color: #434343 !important;
+    border-bottom: 0.5rem solid #434343 !important;
   }
 }
 
@@ -11186,11 +11168,10 @@ div.UXCaseLabel {
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 2rem 0 2rem 0;
 }
-
-
-.fixed-image-section,
+/* Deleting */
+/* .fixed-image-section,
 .fixed-image-section-UX_VTP {
   position: relative;
   z-index: 0;
@@ -11220,35 +11201,11 @@ div.UXCaseLabel {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.fixed-image-section {
-  background-image: url("../assets/img/bg_main.png");
-}
-
-.fixed-image-section-UX_VTP {
-  background-image: url("../assets/img/UXCaseStudies/UX_VTP_main.png");
-}
-
+} */
 
 .hero-section {
-/*  overflow: hidden;
-  margin-top: 32px;
-  margin-right: 24px;
-  margin-left: 24px; */
   padding: 200px;
   text-align: left;
-}
-
-.hero-section.fixed-image-section,
-.hero-section.fixed-image-section-UX_VTP {
-  margin: 0px;
-  padding-top: 224px;
-  padding-bottom: 224px;
-}
-
-.hero-section.fixed-image-section.home,
-.hero-section.fixed-image-section-UX_VTP.home {
   position: static;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11277,14 +11234,14 @@ div.UXCaseLabel {
   background-position: 50% 50%;
   background-size: cover;
   background-attachment: fixed;
+  background-image: url("../assets/img/bg_main.png");
+}
+
+.caseStudyVTP .hero-section {
+  background-image: url("../assets/img/UXCaseStudies/UX_VTP_main.png");
 }
 
 @media screen and (max-width: 991px) {
-  .fixed-image-section,
-  .fixed-image-section-UX_VTP {
-    padding: 241px;
-  }
-
   .hero-section {
     display: block;
     margin-right: 21px;
@@ -11304,16 +11261,10 @@ div.UXCaseLabel {
     padding-left: 20px;
   }
 
-  .fixed-image-section,
-  .fixed-image-section-UX_VTP {
-    height: 100vh;
-    padding: 111px;
-  }
-
   .hero-section {
-    position: static;
     display: block;
     padding: 136px 16px;
+    height: 100vh;
   }
 }
 
@@ -11324,17 +11275,13 @@ div.UXCaseLabel {
     padding-left: 0px;
   }
 
-  .fixed-image-section,
-  .fixed-image-section-UX_VTP {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+  .hero-section {
     display: block;
-    height: 70vh;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding: auto 0px 0px;
+    width: 90%;
+    height: 90vh;
+    margin: 32px auto 0px auto;
+    padding: 200px 0px 140px 0px;
+    overflow: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -11344,65 +11291,8 @@ div.UXCaseLabel {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-  }
-
-  .hero-section {
-    display: block;
-    width: 90%;
-    height: 300px;
-    margin-top: 32px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 200px 0px 140px;
-  }
-
-  .hero-section.fixed-image-section,
-  .hero-section.fixed-image-section-UX_VTP {
-    display: block;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 63px 23px 296px;
-  }
- 
-  .hero-section.fixed-image-section.home {
-    overflow: auto;
-    height: 90vh;
-    padding-top: 0%;
-    padding-bottom: 35%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     background-image: url('../assets/img/bg_main.png'), -webkit-gradient(linear, left top, left bottom, from(#e8cf7d), to(#e8cf7d));
     background-image: url('../assets/img/bg_main.png'), linear-gradient(180deg, #e8cf7d, #e8cf7d);
-    background-position: 69% 50%;
-    background-size: cover, auto;
-    background-repeat: no-repeat, repeat;
-    background-attachment: fixed, scroll;
-  }
-
-  .hero-section.fixed-image-section-UX_VTP.home {
-    overflow: auto;
-    height: 90vh;
-    padding-top: 10%;
-    padding-bottom: 0%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    background-image: url('../assets/img/UXCaseStudies/UX_VTP_main.png'), -webkit-gradient(linear, left top, left bottom, from(#e8cf7d), to(#e8cf7d));
-    background-image: url('../assets/img/UXCaseStudies/UX_VTP_main.png'), linear-gradient(180deg, #e8cf7d, #e8cf7d);
     background-position: 69% 50%;
     background-size: cover, auto;
     background-repeat: no-repeat, repeat;
@@ -11414,24 +11304,6 @@ div.UXCaseLabel {
   height: 400vh;
 }
 
-/*.openingtitles {
-  display: block;
-  margin-top: -16px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 auto;
-  -ms-flex: 0 auto;
-  flex: 0 auto;
+.offwhite {
+  background-color: #FCFCFC !important;
 }
