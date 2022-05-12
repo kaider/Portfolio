@@ -10975,6 +10975,7 @@ body {
   padding: 0 6rem 0 0;
 }
 
+
 @media (max-width: 992px) {
   .featured-text-left {
     padding: 0 !important;
@@ -10984,6 +10985,7 @@ body {
 @media (max-width: 992px) {
   .featured-text-right {
     padding: 0 !important;
+
   }
 }
 
