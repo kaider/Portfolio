@@ -224,7 +224,7 @@
   
 .topFade {
     opacity: 0;
-    animation: topFadeOut 4s 500ms ease-out forwards;
+    animation: topFadeOut 1200ms 500ms ease-out forwards;
 }
 
 @keyframes topFadeOut {
@@ -238,19 +238,14 @@
     }
 }
 
-.fadeIn-4-2 {
+.fadeIn-2 {
     opacity: 0;
-    animation: fadeInText 4s 2s ease-out forwards;
+    animation: fadeInText 2500ms 500ms ease-out forwards;
 }
 
-.fadeIn-3-2 {
+.fadeIn-1{
     opacity: 0;
-    animation: fadeInText 3s 2s ease-out forwards;
-}
-
-.fadeIn-2-2 {
-    opacity: 0;
-    animation: fadeInText 2s 2s ease-out forwards;
+    animation: fadeInText 1500ms 1000ms ease-out forwards;
 }
 
 @keyframes fadeInText {
@@ -263,8 +258,8 @@
     font-family: 'IBM Plex Serif', sans-serif !important;
     font-style: normal !important;
     font-weight: 700 !important;
-    font-size: 2.15rem;
-    line-height: 1rem;
+    font-size: 3.4rem;
+    line-height: 74px;
     letter-spacing: 0.25px;
 }
   
@@ -511,6 +506,10 @@ div.UXCaseLabel {
   
 .caseStudyVTP .hero-section {
     background-image: url("../assets/img/UXCaseStudies/UX_VTP_main.png");
+}
+
+.aboutPage .hero-section {
+    background-image: url("../assets/img/About.png");
 }
   
 @media screen and (max-width: 991px) {
