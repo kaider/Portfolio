@@ -1,4 +1,3 @@
-<!-- ###### dev branch ######-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="Leon Dinh" content="Portfolio of Product Designer and 3D Artist, Leon Dinh" />
         <title>Leon Dinh - Product Designer</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -14,11 +13,12 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css" rel="stylesheet" />
 
         <!-- Google Tag Manager -->
         <script>
@@ -27,7 +27,7 @@
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-WVDNXQD');
-            </script>
+        </script>
             <!-- End Google Tag Manager -->
     </head>
 
@@ -35,8 +35,9 @@
 
     <body id="page-top">
         <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVDNXQD"
-         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVDNXQD" height="0" width="0" style="display:none; visibility:hidden"></iframe>
+        </noscript>
         <!-- End Google Tag Manager (noscript) -->
 
         <!-- Navigation-->
@@ -49,30 +50,63 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item">
+                            <a class="fw-semibold nav-link" href="#page-top">
+                                HOME
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="fw-semibold nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              PORTFOLIO
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="row mainDropdown">
+                                    <div class="col-md-5">
+                                        <ul class="list-unstyled">
+                                            <li class="fw-normal text-muted mb-md-3 followingLine" style="padding-left: 1rem;">Categories</li>
+                                            <li><a class="dropdown-item" href="#projects">UX Case Studies</a></li>
+                                            <li><a class="dropdown-item" href="#">Illustrations</a></li>
+                                            <li><a class="dropdown-item" href="#">3D Assets</a></li>
+                                            <li><a class="dropdown-item" href="#">Work-in-Progress</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-7">
+                                        <ul class="list-unstyled">
+                                            <li class="fw-normal text-muted mb-md-3 followingLine" style="padding-left: 1rem;">UX Case Studies</li>
+                                            <li><a class="dropdown-item" href="./CaseStudies/UX_VTP.html">Virtual Teaching Platform</a></li>
+                                            <li><a class="dropdown-item" href="#">TreasuryDirect.gov</a></li>
+                                            <li><a class="dropdown-item" href="#">ArtsForAll.com</a></li>
+                                            <li><a class="dropdown-item" href="#">Odysseia</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                          </li>
+                        
+                        <li class="nav-item">
+                            <a class="fw-semibold nav-link" href="./About.html">
+                                ABOUT
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="hero-section masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center ">
                 <div class="d-flex">
-                    <div class="">
-                        <h1 class="my-0 mb-3">Leon Dinh</h1>
+                    <div class=" ">
+                        <h1 class="my-0 mb-3 topFade">Leon Dinh</h1>
                         <h2 class="mt-2">
-                            <p class="mb-2 fw-light">product designer and developer </p>
-                            <p class="mb-2 fw-light">specialized in </p>
-                            <p class="mb-2 fw-light">UX/UI, Illustrations, and 3D.</p>
-                            </h2>
-                        <div>
-                            
-                        </div>
+                            <p class="mb-2 fw-light fadeIn-1">product designer and developer </p>
+                            <p class="mb-2 fw-light fadeIn-2">specialized in </p>
+                            <p class="mb-2 fw-light fadeIn-1">UX/UI, Illustrations, and 3D.</p>
+                        </h2>
                     </div>
                 </div>
-            </div>
-
             </div>
         </header>
 
@@ -85,11 +119,11 @@
                 <div class="row gx-0 UXCase">
                     <div class="order-0 order-lg-0 col-xl-6 col-lg-6">
                         <a href="./CaseStudies/UX_VTP.html">
-                            <img class="img-fluid mb-3 UXCaseImg" src="./assets/img/VirtualTeachingApp.png" alt="..." />
+                            <img class="img-fluid mb-3 UXCaseImg" src="./assets/img/VirtualTeachingApp_HALF.png" alt="..." />
                             </a>
                     </div>
                     <div class="order-0 order-lg-1 col-xl-6 col-lg-6">
-                        <div class="featured-text-right text-lg-left">
+                        <div class="featured-text-right">
                             <h4 class="UXCaseTitle">Virtual Teaching Platform</h4>
                             <p class="text-black-50 mb-sm-4">The all-in-one virtual teaching platform for teachers. With ULearn, teachers have a convienent all-in-one place to help them with all their classroom needs...</p>
                             <div class="UXCaseLabel mb-sm-4">
@@ -98,14 +132,14 @@
                                 <p class="UXCaseTag">Mobile App</p>
                                 <p class="UXCaseTag">Figma</p>
                             </div>
-                            <a class="hvr-sweep mb-4" href="./CaseStudies/UX_VTP.html">View Case Study</a>
+                            <a class="hvr-sweep UXCaseButton" href="./CaseStudies/UX_VTP.html">View Case Study</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="row gx-0 UXCase">
                     <div class="order-1 order-lg-0 col-xl-6 col-lg-6">
-                        <div class="featured-text-left text-lg-left">
+                        <div class="featured-text-left">
                             <h4 class="UXCaseTitle">TreasuryDirect.gov</h4>
                             <p class="text-black-50 mb-sm-4">This government site needed an overhaul on how they organize their information and updated layout to help them come into the modern age while still remaining functional.</p>
                             <div class="UXCaseLabel mb-sm-4">
@@ -114,12 +148,12 @@
                                 <p class="UXCaseTag">Desktop</p>
                                 <p class="UXCaseTag">Mobile</p>
                             </div>
-                            <a class="hvr-sweep mb-4" href="">View Case Study</a>
+                            <a class="hvr-sweep UXCaseButton" href="">View Case Study</a>
                         </div>
                     </div>
                     <div class="order-0 order-lg-1 col-xl-6 col-lg-6">
                         <a>
-                            <img class="img-fluid mb-3 UXCaseImg" src="./assets/img/TreasuryDirect.png" alt="..." />
+                            <img class="img-fluid mb-3 UXCaseImg" src="./assets/img/TreasuryDirect_HALF.png" alt="..." />
                         </a>
                     </div>
                 </div>
@@ -127,11 +161,11 @@
                 <div class="row gx-0 UXCase">
                     <div class="order-0 order-lg-0 col-xl-6 col-lg-6">
                         <a>
-                            <img class="img-fluid mb-3 UXCaseImg" src="./assets/img/ArtsForAll.png" alt="..." />
+                            <img class="img-fluid mb-3 UXCaseImg" src="./assets/img/ArtsForAll_HALF.png" alt="..." />
                         </a>
                     </div>
                     <div class="order-0 order-lg-1 col-xl-6 col-lg-6">
-                        <div class="featured-text-right text-lg-left">
+                        <div class="featured-text-right">
                             <h4 class="UXCaseTitle">ArtsForAll.com</h4>
                             <p class="text-black-50 mb-sm-4">Non-profit organization that offers accessible artistic opportunities to children in the New York City area who face socio-economic, physical, or emotional barriers to exploring the arts.</p>
                             <div class="UXCaseLabel mb-sm-4">
@@ -140,14 +174,14 @@
                                 <p class="UXCaseTag">Figma</p>
                                 <p class="UXCaseTag">Illustrator</p>
                             </div>
-                            <a class="hvr-sweep mb-4" href="">View Case Study</a>
+                            <a class="hvr-sweep UXCaseButton" href="">View Case Study</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="row gx-0 UXCase">
                     <div class="order-1 order-lg-0 col-xl-6 col-lg-6">
-                        <div class="featured-text-left text-lg-left">
+                        <div class="featured-text-left">
                             <h4 class="UXCaseTitle">Odysseia</h4>
                             <p class="text-black-50 mb-sm-4">A traveling app to help users enjoy their vacation while staying safe from Covid, by providing real time updates of health and safety requirements.</p>
                             <div class="UXCaseLabel mb-sm-4">
@@ -156,12 +190,12 @@
                                 <p class="UXCaseTag">Design System</p>
                                 <p class="UXCaseTag">Mobile App</p>
                             </div>
-                            <a class="hvr-sweep mb-4" href="">View Case Study</a>
+                            <a class="hvr-sweep UXCaseButton" href="">View Case Study</a>
                         </div>
                     </div>
                     <div class="order-0 order-lg-1 col-xl-6 col-lg-6">
                         <a>
-                            <img class="img-fluid mb-3 UXCaseImg" src="./assets/img/ArtsForAll.png" alt="..." />
+                            <img class="img-fluid mb-3 UXCaseImg" src="./assets/img/ArtsForAll_HALF.png" alt="..." />
                         </a>
                     </div>
                 </div>
@@ -169,7 +203,7 @@
             </div>
         </section>
 
-        <section class="text-start" id="about">
+        <!-- <section class="text-start" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-start">
                     <div class="">
@@ -187,7 +221,7 @@
                 <a class="hvr-sweep mb-lg-5" href="">More Information</a>
 
             </div>
-        </section>
+        </section> -->
 
         <!-- Footer-->
         <footer class="footer bg-transparent small text-center text-black-50">
