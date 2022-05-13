@@ -2910,15 +2910,14 @@ progress {
   z-index: 1000;
   display: none;
   min-width: 10rem;
-  padding: 0.5rem 0;
+  padding: 1.5rem 0 0.75rem 0;
   margin: 0;
   font-size: 1rem;
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #F5F5F5;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.25rem;
 }
 .dropdown-menu[data-bs-popper] {

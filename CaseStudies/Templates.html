@@ -18,6 +18,7 @@
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
 
     <!-- Google Tag Manager -->
     <script>
@@ -43,21 +44,88 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="../index.html">LD</a>
+            <a class="navbar-brand" href="../index.html#page-to">LD</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item">
+                        <a class="fw-semibold nav-link" href="../index.html#page-top">
+                            HOME
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="fw-semibold nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          PORTFOLIO
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="row mainDropdown">
+                                <div class="col-md-5">
+                                    <ul class="list-unstyled">
+                                        <li class="fw-normal text-muted mb-md-3 followingLine" style="padding-left: 1rem;">Categories</li>
+                                        <li><a class="dropdown-item" href="../index.html#projects">UX Case Studies</a></li>
+                                        <li><a class="dropdown-item" href="#">Illustrations</a></li>
+                                        <li><a class="dropdown-item" href="#">3D Assets</a></li>
+                                        <li><a class="dropdown-item" href="#">Work-in-Progress</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-7">
+                                    <ul class="list-unstyled">
+                                        <li class="fw-normal text-muted mb-md-3 followingLine" style="padding-left: 1rem;">UX Case Studies</li>
+                                        <li><a class="dropdown-item" href="#">Virtual Teaching Platform</a></li>
+                                        <li><a class="dropdown-item" href="#">TreasuryDirect.gov</a></li>
+                                        <li><a class="dropdown-item" href="#">ArtsForAll.com</a></li>
+                                        <li><a class="dropdown-item" href="#">Odysseia</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                    
+                    <li class="nav-item">
+                        <a class="fw-semibold nav-link" href="#about">
+                            ABOUT
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    hello
+    <!-- Masthead-->
+    <header class="hero-section home masthead-sub">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center">
+            <div class="d-flex">
+                <div class="col-sm-11">
+                    <h1 class="my-0 mb-4">Virtual Teaching Platform</h1>
+                    <h2 class="mt-2">
+                        <p class="mb-2 fw-normal">
+                            The all-in-one virtual teaching platform for teachers. <br> <br>
 
+                            Virtual teachers have a lot on their plates and have to use multiple <br>
+                            resources to plan and teach. With ULearn, teachers have a convienent <br>
+                            all-in-one place to help them with all their classroom needs.
+                        </p>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="offwhite testEmpty">
+        hello
+    </div>
+
+
+    <!-- Footer-->
+    <footer class="footer bg-transparent small text-center text-black-50">
+        <div class="container px-4 px-lg-5">
+            Copyright &copy; Leon Dinh 2022
+        </div>
+    </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
