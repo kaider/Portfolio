@@ -162,6 +162,13 @@ p {
   margin-bottom: 1rem;
 }
 
+b1 {
+  font-size: 1rem;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
@@ -2174,13 +2181,12 @@ progress {
 
 .hvr-sweep {
   text-decoration: none;
-  padding: 0.5rem 0.5rem .75rem 0;
+  padding: 0.5rem 0 .75rem 0;
   font-weight: 600;
   font-size: 1rem;
   color: rgb(17,17,17);
   border-bottom: 3px solid rgb(17,17,17);
   letter-spacing: 0.05rem;
-
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);

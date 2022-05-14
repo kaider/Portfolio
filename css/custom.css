@@ -1,3 +1,18 @@
+.playFair {
+    line-height: 47px;
+    letter-spacing: 0.25px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+
+@media (max-width: 992px) {
+    .playFair {
+        font-size: calc(20px + (35 - 20) * ((100vw - 375px) / (1600 - 375)));
+        line-height: 35px;
+    }    
+}
+
 .navbar .dropdown-menu{
     right: 0px;
     width: fit-content;
@@ -57,10 +72,21 @@
     color: #7EA19F;
 }
 
+.caseStudyVTP a:hover {
+    color: #8874B2;
+}
+
 .caseStudyVTP .navbar-shrink .navbar-brand:focus,
 .caseStudyVTP .navbar-shrink .navbar-brand:active,
 .caseStudyVTP .navbar-shrink .navbar-brand:hover {
-    color: #434343 !important;
+    color: #8874B2 !important;
+}
+
+.caseStudyVTP .hvr-sweep:active,
+.caseStudyVTP .hvr-sweep:focus,
+.caseStudyVTP .hvr-sweep:hover {
+  opacity: 1;
+  border-bottom: 3px solid #8874B2;
 }
 
 #mainNav .navbar-nav .nav-item:hover{
@@ -132,16 +158,16 @@
     }
 
     .caseStudyVTP .navbar-shrink .nav-link:hover {
-        color: #434343 !important;
+        color: #8874B2 !important;
     }
 
     .caseStudyVTP .navbar-shrink .nav-link:active {
-        color: #434343 !important;
+        color: #8874B2 !important;
     }
 
     .caseStudyVTP .navbar-shrink .nav-link.active {
-        color: #434343 !important;
-        border-bottom: 0.5rem solid #434343 !important;
+        color: #8874B2 !important;
+        border-bottom: 0.5rem solid #8874B2 !important;
     }
 }
 
@@ -408,6 +434,14 @@ div.UXCaseLabel {
   .UXCaseButton {
     margin-top: 1.5rem !important;
   }
+}
+
+@media (max-width: 768px) {
+    .UXCaseTeam b1,
+    .UXCaseTeam h5,
+    .UXCaseTeam a {
+        font-size: 90%;
+    }
 }
 
 .hero-section {
