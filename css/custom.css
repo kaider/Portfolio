@@ -4,6 +4,15 @@
     left: unset;
 }
 
+@media (max-width: 992px) {
+    .navbar .dropdown-menu {
+        padding: none;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0 0 1rem 0;
+    }
+}
+
 .mainDropdown {
     width: max-content;
 }
@@ -245,44 +254,13 @@
 
 .fadeIn-1{
     opacity: 0;
-    animation: fadeInText 1500ms 1000ms ease-out forwards;
+    animation: fadeInText 2000ms 300ms ease-out forwards;
 }
 
 @keyframes fadeInText {
     100%{
         opacity: 1;
     }
-}
-
-.aboutMeTag {
-    font-family: 'IBM Plex Serif', sans-serif !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 3.4rem;
-    line-height: 74px;
-    letter-spacing: 0.25px;
-}
-  
-@media (max-width: 992px) {
-    .aboutMeTag {
-        font-size: 1.75rem;
-        line-height: 2.15rem;
-    }
-}
-  
-.aboutMeBody {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
-.about-section {
-    padding-top: 10rem;
-    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-}
-.about-section p {
-    margin-bottom: 5rem;
 }
 
 .projects-section {
@@ -514,9 +492,7 @@ div.UXCaseLabel {
   
 @media screen and (max-width: 991px) {
     .hero-section {
-          display: block;
-          margin-right: 21px;
-        margin-left: 21px;
+        display: block;
         padding: 140px;
     }
   
@@ -548,10 +524,9 @@ div.UXCaseLabel {
   
     .hero-section {
         display: block;
-        width: 90%;
         height: 90vh;
         margin: 32px auto 0px auto;
-        padding: 200px 0px 140px 0px;
+        padding: 200px 0px 140px 10px;
         overflow: auto;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -570,4 +545,35 @@ div.UXCaseLabel {
         background-attachment: fixed, scroll;
     }
 }
+
+.aboutMeTag {
+    font-family: 'IBM Plex Serif', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 3.4rem;
+    line-height: 74px;
+    letter-spacing: 0.25px;
+}
   
+@media (max-width: 992px) {
+    .aboutMeTag {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 0 10px 0 10px;
+    }
+}
+  
+.aboutMeBody {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.about-section {
+    padding-top: 10rem;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+.about-section p {
+    margin-bottom: 5rem;
+}

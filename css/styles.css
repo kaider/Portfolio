@@ -2910,7 +2910,7 @@ progress {
   z-index: 1000;
   display: none;
   min-width: 10rem;
-  padding: 1.5rem 0 0.75rem 0;
+  padding: 1.5rem 1.15rem 1rem 0.75rem;
   margin: 0;
   font-size: 1rem;
   color: #212529;
@@ -2920,6 +2920,7 @@ progress {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0.25rem;
 }
+
 .dropdown-menu[data-bs-popper] {
   top: 100%;
   left: 0;
@@ -2959,6 +2960,7 @@ progress {
     left: auto;
   }
 }
+
 @media (min-width: 768px) {
   .dropdown-menu-md-start {
     --bs-position: start;
