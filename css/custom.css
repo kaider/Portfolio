@@ -478,10 +478,9 @@ div.UXCaseLabel {
     padding: 1rem 2rem 0 2rem;
 }
 
-iframe {
+#VTP_Conclusion iframe {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    height: 1100px;
-    width: 800px;
+    height: 95vh;
     margin-bottom: 8rem;
 }
 
