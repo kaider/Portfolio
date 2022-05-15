@@ -72,21 +72,10 @@
     color: #7EA19F;
 }
 
-.caseStudyVTP a:hover {
-    color: #8874B2;
-}
-
-.caseStudyVTP .navbar-shrink .navbar-brand:focus,
-.caseStudyVTP .navbar-shrink .navbar-brand:active,
-.caseStudyVTP .navbar-shrink .navbar-brand:hover {
-    color: #8874B2 !important;
-}
-
 .caseStudyVTP .hvr-sweep:active,
 .caseStudyVTP .hvr-sweep:focus,
 .caseStudyVTP .hvr-sweep:hover {
   opacity: 1;
-  border-bottom: 3px solid #8874B2;
 }
 
 #mainNav .navbar-nav .nav-item:hover{
@@ -194,10 +183,11 @@
     font-weight: 500 !important;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
     .masthead h1 {
-        font-size: 3.5rem;
-        line-height: 3.5rem;
+        font-size: calc(50px + (64 - 50) * ((100vw - 375px) / (1600 - 375)));
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
     }
 }
 
@@ -206,13 +196,7 @@
         height: 88vh;
         padding: 0;
     }
-    
-    .masthead h1 {
-        font-size: 6.5rem;
-        line-height: 6.5rem;
-        letter-spacing: 0.8rem;
-    }
-    
+        
     .masthead h2 {
         max-width: 30rem;
         font-size: 1.25rem;
@@ -419,6 +403,13 @@ div.UXCaseLabel {
   margin: 0 8px 0 0;
 }
 
+.UXCaseNav {
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 3rem 0;
+    padding: 2rem 3rem 0 3rem;
+}
+
 @media (max-width:1200px) {
   .UXCaseTag {
     padding: 4px 4px !important;
@@ -430,56 +421,43 @@ div.UXCaseLabel {
   margin-top: 0rem;
 }
 
+.UXCaseTeam {
+    justify-content: center;
+    border: 1.5px solid var(--bs-gray-700);
+    border-radius: 0.5rem;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
 @media (max-width: 768px) {
   .UXCaseButton {
     margin-top: 1.5rem !important;
   }
-}
-
-@media (max-width: 768px) {
-    .UXCaseTeam b1,
-    .UXCaseTeam h5,
-    .UXCaseTeam a {
-        font-size: 90%;
+  .UXCaseTeam b1,
+  .UXCaseTeam h5,
+  .UXCaseTeam a {
+      font-size: 90%;
+  }
+  .UXCaseNav {
+    display: none;
+    }
+  .imgSVG {
+    display: none;
     }
 }
 
-.hero-section {
-    padding: 200px;
-    text-align: left;
-    position: static;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    height: 90vh;
-    margin: auto;
-    float: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url("../assets/img/bg_main.png");
+#VTP_Research {
+    margin-bottom: 9.375rem;
+    padding-top: 1.5rem;
 }
-  
-.caseStudyVTP .hero-section {
-    background-image: url("../assets/img/UXCaseStudies/UX_VTP_main.png");
+#VTP_Research u {
+    list-style-type: decimal;
+}
+
+#VTP_Definition,
+#VTP_Prototyping {
+    padding: 9.375rem 0 9.375rem 0;
+    background: #D2CDDD;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
 
 .hero-section {
@@ -517,7 +495,45 @@ div.UXCaseLabel {
 }
   
 .caseStudyVTP .hero-section {
-    background-image: url("../assets/img/UXCaseStudies/UX_VTP_main.png");
+    background-image: url("../assets/img/UX_VTP/UX_VTP_main.png");
+}
+
+.hero-section {
+    padding: 200px;
+    text-align: left;
+    position: static;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    height: 90vh;
+    margin: auto;
+    float: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../assets/img/bg_main.png");
+}
+  
+.caseStudyVTP .hero-section {
+    background-image: url("../assets/img/UX_VTP/UX_VTP_main.png");
 }
 
 .aboutPage .hero-section {
