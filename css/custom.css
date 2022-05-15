@@ -1,7 +1,31 @@
+.playFair {
+    line-height: 47px;
+    letter-spacing: 0.25px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+
+@media (max-width: 992px) {
+    .playFair {
+        font-size: calc(20px + (35 - 20) * ((100vw - 375px) / (1600 - 375)));
+        line-height: 35px;
+    }    
+}
+
 .navbar .dropdown-menu{
     right: 0px;
     width: fit-content;
     left: unset;
+}
+
+@media (max-width: 992px) {
+    .navbar .dropdown-menu {
+        padding: none;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0 0 1rem 0;
+    }
 }
 
 .mainDropdown {
@@ -48,10 +72,10 @@
     color: #7EA19F;
 }
 
-.caseStudyVTP .navbar-shrink .navbar-brand:focus,
-.caseStudyVTP .navbar-shrink .navbar-brand:active,
-.caseStudyVTP .navbar-shrink .navbar-brand:hover {
-    color: #434343 !important;
+.caseStudyVTP .hvr-sweep:active,
+.caseStudyVTP .hvr-sweep:focus,
+.caseStudyVTP .hvr-sweep:hover {
+  opacity: 1;
 }
 
 #mainNav .navbar-nav .nav-item:hover{
@@ -123,16 +147,16 @@
     }
 
     .caseStudyVTP .navbar-shrink .nav-link:hover {
-        color: #434343 !important;
+        color: #8874B2 !important;
     }
 
     .caseStudyVTP .navbar-shrink .nav-link:active {
-        color: #434343 !important;
+        color: #8874B2 !important;
     }
 
     .caseStudyVTP .navbar-shrink .nav-link.active {
-        color: #434343 !important;
-        border-bottom: 0.5rem solid #434343 !important;
+        color: #8874B2 !important;
+        border-bottom: 0.5rem solid #8874B2 !important;
     }
 }
 
@@ -159,10 +183,11 @@
     font-weight: 500 !important;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
     .masthead h1 {
-        font-size: 3.5rem;
-        line-height: 3.5rem;
+        font-size: calc(50px + (64 - 50) * ((100vw - 375px) / (1600 - 375)));
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
     }
 }
 
@@ -171,13 +196,7 @@
         height: 88vh;
         padding: 0;
     }
-    
-    .masthead h1 {
-        font-size: 6.5rem;
-        line-height: 6.5rem;
-        letter-spacing: 0.8rem;
-    }
-    
+        
     .masthead h2 {
         max-width: 30rem;
         font-size: 1.25rem;
@@ -245,44 +264,13 @@
 
 .fadeIn-1{
     opacity: 0;
-    animation: fadeInText 1500ms 1000ms ease-out forwards;
+    animation: fadeInText 2000ms 300ms ease-out forwards;
 }
 
 @keyframes fadeInText {
     100%{
         opacity: 1;
     }
-}
-
-.aboutMeTag {
-    font-family: 'IBM Plex Serif', sans-serif !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 3.4rem;
-    line-height: 74px;
-    letter-spacing: 0.25px;
-}
-  
-@media (max-width: 992px) {
-    .aboutMeTag {
-        font-size: 1.75rem;
-        line-height: 2.15rem;
-    }
-}
-  
-.aboutMeBody {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
-.about-section {
-    padding-top: 10rem;
-    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-}
-.about-section p {
-    margin-bottom: 5rem;
 }
 
 .projects-section {
@@ -415,6 +403,13 @@ div.UXCaseLabel {
   margin: 0 8px 0 0;
 }
 
+.UXCaseNav {
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 3rem 0;
+    padding: 2rem 3rem 0 3rem;
+}
+
 @media (max-width:1200px) {
   .UXCaseTag {
     padding: 4px 4px !important;
@@ -426,10 +421,43 @@ div.UXCaseLabel {
   margin-top: 0rem;
 }
 
+.UXCaseTeam {
+    justify-content: center;
+    border: 1.5px solid var(--bs-gray-700);
+    border-radius: 0.5rem;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
 @media (max-width: 768px) {
   .UXCaseButton {
     margin-top: 1.5rem !important;
   }
+  .UXCaseTeam b1,
+  .UXCaseTeam h5,
+  .UXCaseTeam a {
+      font-size: 90%;
+  }
+  .UXCaseNav {
+    display: none;
+    }
+  .imgSVG {
+    display: none;
+    }
+}
+
+#VTP_Research {
+    margin-bottom: 9.375rem;
+    padding-top: 1.5rem;
+}
+#VTP_Research u {
+    list-style-type: decimal;
+}
+
+#VTP_Definition,
+#VTP_Prototyping {
+    padding: 9.375rem 0 9.375rem 0;
+    background: #D2CDDD;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
 
 .hero-section {
@@ -467,7 +495,7 @@ div.UXCaseLabel {
 }
   
 .caseStudyVTP .hero-section {
-    background-image: url("../assets/img/UXCaseStudies/UX_VTP_main.png");
+    background-image: url("../assets/img/UX_VTP/UX_VTP_main.png");
 }
 
 .hero-section {
@@ -505,7 +533,7 @@ div.UXCaseLabel {
 }
   
 .caseStudyVTP .hero-section {
-    background-image: url("../assets/img/UXCaseStudies/UX_VTP_main.png");
+    background-image: url("../assets/img/UX_VTP/UX_VTP_main.png");
 }
 
 .aboutPage .hero-section {
@@ -514,9 +542,7 @@ div.UXCaseLabel {
   
 @media screen and (max-width: 991px) {
     .hero-section {
-          display: block;
-          margin-right: 21px;
-        margin-left: 21px;
+        display: block;
         padding: 140px;
     }
   
@@ -548,10 +574,9 @@ div.UXCaseLabel {
   
     .hero-section {
         display: block;
-        width: 90%;
         height: 90vh;
         margin: 32px auto 0px auto;
-        padding: 200px 0px 140px 0px;
+        padding: 200px 0px 140px 10px;
         overflow: auto;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -570,4 +595,35 @@ div.UXCaseLabel {
         background-attachment: fixed, scroll;
     }
 }
+
+.aboutMeTag {
+    font-family: 'IBM Plex Serif', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 3.4rem;
+    line-height: 74px;
+    letter-spacing: 0.25px;
+}
   
+@media (max-width: 992px) {
+    .aboutMeTag {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 0 10px 0 10px;
+    }
+}
+  
+.aboutMeBody {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.about-section {
+    padding-top: 10rem;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+.about-section p {
+    margin-bottom: 5rem;
+}
