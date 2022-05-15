@@ -479,9 +479,14 @@ div.UXCaseLabel {
 }
 
 #VTP_Conclusion iframe {
-    border: 1px solid rgba(0, 0, 0, 0.1);
     height: 95vh;
     margin-bottom: 8rem;
+}
+
+@media (max-width: 576px) {
+    #VTP_Conclusion iframe {
+        height:85vh;
+    }
 }
 
 .hero-section {
