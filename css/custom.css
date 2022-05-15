@@ -72,6 +72,12 @@
     color: #7EA19F;
 }
 
+.caseStudyVTP #mainNav.navbar-shrink .navbar-brand:focus,
+.caseStudyVTP #mainNav.navbar-shrink .navbar-brand:active,
+.caseStudyVTP #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #7E6CA6;
+}
+
 .caseStudyVTP .hvr-sweep:active,
 .caseStudyVTP .hvr-sweep:focus,
 .caseStudyVTP .hvr-sweep:hover {
@@ -147,16 +153,16 @@
     }
 
     .caseStudyVTP .navbar-shrink .nav-link:hover {
-        color: #8874B2 !important;
+        color: #7E6CA6 !important;
     }
 
     .caseStudyVTP .navbar-shrink .nav-link:active {
-        color: #8874B2 !important;
+        color: #7E6CA6 !important;
     }
 
     .caseStudyVTP .navbar-shrink .nav-link.active {
-        color: #8874B2 !important;
-        border-bottom: 0.5rem solid #8874B2 !important;
+        color: #7E6CA6 !important;
+        border-bottom: 0.5rem solid #7E6CA6 !important;
     }
 }
 
@@ -458,6 +464,25 @@ div.UXCaseLabel {
     padding: 9.375rem 0 9.375rem 0;
     background: #D2CDDD;
     box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+#VTP_Conclusion {
+    padding: 9.375rem 0 2rem 0;
+    background: #D2CDDD;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+#VTP_Definition img,
+#VTP_Ideation img,
+#VTP_Prototyping img {
+    padding: 1rem 2rem 0 2rem;
+}
+
+#VTP_Conclusion iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 1100px;
+    width: 800px;
+    margin-bottom: 8rem;
 }
 
 .hero-section {
