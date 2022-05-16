@@ -464,7 +464,7 @@ div.UXCaseLabel {
 }
 
 .UXCaseSwap {
-    margin: 8rem 8vw 0 8vw;
+    margin: 9rem 12vw 2rem 12vw;
     justify-content: space-between;
     display: flex;
 }
@@ -493,7 +493,8 @@ div.UXCaseLabel {
 }
 
 #VTP_Research,
-#TD_Overview {
+#TD_Overview,
+#AFA_Overview {
     margin-bottom: 9.375rem;
     padding-top: 1.5rem;
 }
@@ -503,7 +504,7 @@ div.UXCaseLabel {
 
 #VTP_Definition,
 #VTP_Prototyping {
-    padding: 9.375rem 0 9.375rem 0;
+    padding: 9.375rem 0;
     background: #D2CDDD;
     box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
@@ -520,6 +521,59 @@ div.UXCaseLabel {
     padding: 1rem 2rem 0 2rem;
 }
 
+#TD_Ideation,
+#TD_Prototyping {
+    padding: 9.375rem 0;
+    background: #A7B7AC;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+#TD_Final {
+    padding: 9.375rem 0 2rem 0;
+}
+
+#AFA_Research,
+#AFA_Evaluation {
+    padding: 9.375rem 0;
+    background: #DDE6EE;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+#AFA_Final {
+    padding: 9.375rem 0 2rem 0;
+}
+
+#AFA_Research img {
+    padding: 3rem 1.5rem;
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+#AFA_Ideation img {
+    padding: 1rem 4rem 9.375rem 4rem;
+}
+
+@media (max-width: 992px) {
+    #AFA_Research img {
+        padding: 3rem 0.5rem;
+    }
+    #AFA_Ideation img {
+        padding: 0 1.5rem 7rem 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #AFA_Research img {
+        width: 85%;
+    }
+    #AFA_Research .left {
+        padding: 1rem 5rem 0 0;
+    }
+    #AFA_Research .right {
+        padding: 1rem 0 0 5rem;
+    }
+}
+
 iframe {
     height: 95vh;
 }
@@ -528,17 +582,6 @@ iframe {
     iframe {
         height:85vh;
     }
-}
-
-#TD_Ideation,
-#TD_Prototyping {
-    padding: 9.375rem 0 9.375rem 0;
-    background: #A7B7AC;
-    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
-}
-
-#TD_Final {
-    padding: 9.375rem 0 2rem 0;
 }
 
 .hero-section {
@@ -581,6 +624,10 @@ iframe {
 
 .caseStudyTD .hero-section {
     background-image: url("../assets/img/UX_TD/UX_TD_main.png");
+}
+
+.caseStudyAFA .hero-section {
+    background-image: url("../assets/img/UX_AFA/UX_AFA_main.png");
 }
 
 .caseStudyTD .accordion-item {
