@@ -492,7 +492,8 @@ div.UXCaseLabel {
     }
 }
 
-#VTP_Research {
+#VTP_Research,
+#TD_Overview {
     margin-bottom: 9.375rem;
     padding-top: 1.5rem;
 }
@@ -529,17 +530,15 @@ iframe {
     }
 }
 
-#TD_Definition,
+#TD_Ideation,
 #TD_Prototyping {
     padding: 9.375rem 0 9.375rem 0;
     background: #A7B7AC;
     box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
 
-#TD_Conclusion {
+#TD_Final {
     padding: 9.375rem 0 2rem 0;
-    background: #A7B7AC;
-    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
 
 .hero-section {
@@ -585,20 +584,17 @@ iframe {
 }
 
 .caseStudyTD .accordion-item {
-    background-color: #87978D;
+    background-color: var(--bs-gray-300);
     border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
-.caseStudyTD .accordion-button {
-    background-color: #A7B7AC;
-}
-
 .caseStudyTD .accordion-button:focus {
-    background-color: #CADCD0;
+    background-color: var(--bs-gray-300);
+    box-shadow: none;
 }
 
 .caseStudyTD .accordion-button:not(.collapsed) {
-    color: #606F65;
+    color: var(--bs-gray-600);
 }
 
 .hero-section {
