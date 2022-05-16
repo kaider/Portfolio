@@ -78,6 +78,12 @@
     color: #7E6CA6;
 }
 
+.caseStudyTD #mainNav.navbar-shrink .navbar-brand:focus,
+.caseStudyTD #mainNav.navbar-shrink .navbar-brand:active,
+.caseStudyTD #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #4D8C61;
+}
+
 .caseStudyVTP .hvr-sweep:active,
 .caseStudyVTP .hvr-sweep:focus,
 .caseStudyVTP .hvr-sweep:hover {
@@ -164,6 +170,19 @@
         color: #7E6CA6 !important;
         border-bottom: 0.5rem solid #7E6CA6 !important;
     }
+
+    .caseStudyTD .navbar-shrink .nav-link:hover {
+        color: #4D8C61 !important;
+    }
+
+    .caseStudyTD .navbar-shrink .nav-link:active {
+        color: #4D8C61 !important;
+    }
+
+    .caseStudyTD .navbar-shrink .nav-link.active {
+        color: #4D8C61 !important;
+        border-bottom: 0.5rem solid #4D8C61 !important;
+    }
 }
 
 .masthead {
@@ -227,6 +246,10 @@
             background-clip: text;
 }
 
+.caseStudyTD h1 {
+    line-height: 5rem;
+}
+
 .masthead-sub h2 {
     font-size: 14px;
     font-weight: 400 !important;
@@ -236,7 +259,7 @@
 @media (max-width: 576px) {
     .masthead-sub h1 {
         font-size: 2rem;
-        line-height: 2.25rem;
+        line-height: 3rem;
     }
 }
 
@@ -376,20 +399,6 @@ img.UXCaseImg:hover {
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.35)); 
 }
 
-/* .UXCaseImg-right {
-  padding-left: 60px;
-}
-
-.UXCaseImg-left {
-  padding-right: 60px;
-}
-
-@media (max-width: 992px) {
-  .UXCaseImg-left, .UXCaseImg-right {
-    padding: 0px !important;
-  }
-} */
-
 div.UXCaseLabel {
   flex-direction: row;
   align-items: center;
@@ -435,19 +444,51 @@ div.UXCaseLabel {
 }
 
 @media (max-width: 768px) {
-  .UXCaseButton {
-    margin-top: 1.5rem !important;
-  }
-  .UXCaseTeam b1,
-  .UXCaseTeam h5,
-  .UXCaseTeam a {
-      font-size: 90%;
-  }
-  .UXCaseNav {
-    display: none;
+    .UXCaseButton {
+        margin-top: 1.5rem !important;
     }
-  .imgSVG {
-    display: none;
+    .UXCaseTeam b1,
+    .UXCaseTeam h5,
+    .UXCaseTeam a {
+        font-size: 90%;
+    }
+    .UXCaseNav {
+        display: none;
+        }
+    .imgSVG {
+        display: none;
+        }
+    .UXCaseTeam h5{
+        margin-top: 1.5rem;
+    }
+}
+
+.UXCaseSwap {
+    margin: 8rem 8vw 0 8vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+.UXCaseSwap div {
+    display: flex;
+}
+
+.UXCaseSwap p {
+    margin: 0.5rem 0.5rem 0.9rem 0;
+}
+
+@media (max-width: 576px) {
+    .UXCaseSwap .hvr-sweep {
+        font-size: 0.8rem;
+    }
+    .UXCaseSwap {
+        font-size: 0.8rem;
+    }
+    .UXCaseSwap div {
+        display: block;
+    }
+    .UXCaseSwap p {
+        margin: 0;
     }
 }
 
@@ -478,15 +519,27 @@ div.UXCaseLabel {
     padding: 1rem 2rem 0 2rem;
 }
 
-#VTP_Conclusion iframe {
+iframe {
     height: 95vh;
-    margin-bottom: 8rem;
 }
 
 @media (max-width: 576px) {
-    #VTP_Conclusion iframe {
+    iframe {
         height:85vh;
     }
+}
+
+#TD_Definition,
+#TD_Prototyping {
+    padding: 9.375rem 0 9.375rem 0;
+    background: #A7B7AC;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+#TD_Conclusion {
+    padding: 9.375rem 0 2rem 0;
+    background: #A7B7AC;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
 
 .hero-section {
@@ -525,6 +578,27 @@ div.UXCaseLabel {
   
 .caseStudyVTP .hero-section {
     background-image: url("../assets/img/UX_VTP/UX_VTP_main.png");
+}
+
+.caseStudyTD .hero-section {
+    background-image: url("../assets/img/UX_TD/UX_TD_main.png");
+}
+
+.caseStudyTD .accordion-item {
+    background-color: #87978D;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.caseStudyTD .accordion-button {
+    background-color: #A7B7AC;
+}
+
+.caseStudyTD .accordion-button:focus {
+    background-color: #CADCD0;
+}
+
+.caseStudyTD .accordion-button:not(.collapsed) {
+    color: #606F65;
 }
 
 .hero-section {
