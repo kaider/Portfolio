@@ -479,16 +479,16 @@ div.UXCaseLabel {
 
 @media (max-width: 576px) {
     .UXCaseSwap .hvr-sweep {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
     .UXCaseSwap {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
     .UXCaseSwap div {
         display: block;
     }
-    .UXCaseSwap p {
-        margin: 0;
+    .UXCaseSwap {
+        margin: 0 6vw 0 8vw;
     }
 }
 
