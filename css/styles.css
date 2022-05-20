@@ -2904,7 +2904,6 @@ progress {
 }
 
 .dropdown-menu {
-  position: absolute;
   z-index: 1000;
   display: none;
   min-width: 10rem;
@@ -2918,6 +2917,7 @@ progress {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-menu[data-bs-popper] {
