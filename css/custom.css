@@ -587,6 +587,9 @@ div.UXCaseLabel {
     #AFA_Research .right {
         padding: 1rem 0 0 5rem;
     }
+    .AFA_EvalImage {
+        display: none;
+    }
 }
 
 iframe {
