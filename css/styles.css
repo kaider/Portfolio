@@ -91,7 +91,6 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  min-width: 350px;
 }
 
 hr {
@@ -160,13 +159,6 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-}
-
-b1 {
-  font-size: 1rem;
-  line-height: 22px;
-  letter-spacing: 0.5px;
-  font-weight: 400;
 }
 
 abbr[title],
@@ -2181,7 +2173,7 @@ progress {
 
 .hvr-sweep {
   text-decoration: none;
-  padding: 0.5rem 0 .75rem 0;
+  padding: 0.5rem 0;
   font-weight: 600;
   font-size: 1rem;
   color: rgb(17,17,17);
@@ -2912,19 +2904,20 @@ progress {
 }
 
 .dropdown-menu {
-  position: absolute;
   z-index: 1000;
   display: none;
   min-width: 10rem;
-  padding: 1.5rem 1.15rem 1rem 0.75rem;
+  padding: 0.5rem 0;
   margin: 0;
   font-size: 1rem;
   color: #212529;
   text-align: left;
   list-style: none;
-  background: #F5F5F5;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -2966,7 +2959,6 @@ progress {
     left: auto;
   }
 }
-
 @media (min-width: 768px) {
   .dropdown-menu-md-start {
     --bs-position: start;
@@ -3414,7 +3406,7 @@ progress {
   font-size: 26px;
   text-decoration: none;
   white-space: nowrap;
-  font-family: 'IBM Plex Serif', sans-serif;
+  font-family: 'IBM Plex Serif';
   font-style: normal;
   font-weight: 600;
 }
@@ -3449,8 +3441,6 @@ progress {
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
   transition: box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3819,7 +3809,6 @@ progress {
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
-  border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -3854,7 +3843,6 @@ progress {
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
-  border-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -6165,9 +6153,9 @@ progress {
   display: inline-flex !important;
 }
 
-/* .d-none {
+.d-none {
   display: none !important;
-} */
+}
 
 .shadow {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
@@ -7098,7 +7086,7 @@ progress {
 }
 
 .text-nav {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
@@ -10741,6 +10729,14 @@ body {
   letter-spacing: 0.0625em;
 }
 
+.about-section {
+  padding-top: 10rem;
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+.about-section p {
+  margin-bottom: 5rem;
+}
+
 .contact-section {
   padding-top: 5rem;
 }
@@ -10779,13 +10775,5 @@ body {
 }
 
 .footer {
-  padding: 2rem 0 2rem 0;
-}
-
-.testEmpty {
-  height: 400vh;
-}
-
-.offwhite {
-  background-color: #FCFCFC !important;
+  padding: 1rem 0;
 }
