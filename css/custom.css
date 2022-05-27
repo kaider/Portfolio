@@ -109,7 +109,7 @@
     background: black;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
 }
 
 .masthead h2 {
@@ -310,6 +310,116 @@ div.UXCaseLabel {
     margin: 0.5rem 0.5rem 0.9rem 0;
 }
 
+/* Fancybox Image Gallery */
+a[data-fancybox] img {
+    cursor: pointer;
+}
+  
+.fancybox__backdrop::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    filter: blur(2px);
+    left: 50%;
+    top: 50%;
+    transform: scale(11);
+    opacity: 0.3;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+  
+.fancybox__container {
+    --fancybox-bg: rgba(0, 0, 0, 0.75);
+    --fancybox-thumbs-width: 48px;
+    --fancybox-thumbs-ratio: 1;
+    --carousel-button-bg: rgb(91 78 76 / 74%);
+    --carousel-button-svg-width: 24px;
+    --carousel-button-svg-height: 24px;
+    --carousel-button-svg-stroke-width: 2.5;
+}
+  
+.fancybox__nav {
+    --carousel-button-svg-width: 24px;
+    --carousel-button-svg-height: 24px;
+}
+  
+.fancybox__nav .carousel__button.is-prev {
+    left: 20px;
+}
+  
+.fancybox__nav .carousel__button.is-next {
+    right: 20px;
+}
+  
+.carousel__button.is-close {
+    right: 5vw;
+    left: auto;
+}
+  
+.fancybox__slide {
+    padding: 8px 88px;
+}
+  
+/* Thumbnails */
+.fancybox__thumbs .carousel__slide {
+    padding: 8px 8px 16px 8px;
+}
+  
+.is-nav-selected::after {
+    display: none;
+}
+  
+.fancybox__thumb {
+    border-radius: 6px;
+    opacity: 0.4;
+}
+  
+.fancybox__thumb:hover,
+.is-nav-selected .fancybox__thumb {
+    border-radius: 6px;
+    opacity: 1;
+}
+  
+.is-nav-selected .fancybox__thumb::after {
+    display: none;
+}
+
+.galleryProduct {
+    margin: 0;
+    padding: 8px;
+    position: relative;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.galleryThumb img {
+    width: 100%;
+}
+
+.galleryInfo{
+	position: absolute;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    padding: 20px;
+	overflow:hidden;
+	color:#fff;
+	display:none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 2;
+    width: 94%;
+    text-align: center;
+}
+
+.galleryProduct:hover .galleryInfo{
+	display:block;
+   -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* Individual case study */
 #VTP_Research,
 #TD_Overview,
 #AFA_Overview {
@@ -368,18 +478,12 @@ div.UXCaseLabel {
     padding: 1rem 4rem 9.375rem 4rem;
 }
 
-#Rectangle21 {
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-}
-
-#Polygon1 {
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-}
-
+/*  Figma Embeb */
 iframe {
     height: 95vh;
 }
 
+/*  Hero section */
 .hero-section {
     padding: 200px;
     text-align: left;
@@ -481,7 +585,8 @@ iframe {
 .aboutPage .hero-section {
     background-image: url("../assets/img/About.png");
 }
-  
+
+/* About me */
 .aboutMeTag {
     font-family: 'IBM Plex Serif', sans-serif !important;
     font-style: normal !important;
@@ -506,6 +611,7 @@ iframe {
     margin-bottom: 5rem;
 }
 
+/* Screen media MAX-WIDTH */
 @media (max-width:1200px) {
     .UXCaseTag {
         padding: 4px 4px !important;
@@ -643,6 +749,8 @@ iframe {
     iframe {
         height:85vh;
     }
+
+    #projects p,
     .caseStudyAFA p,
     .caseStudyTD p,
     .caseStudyVTP p {
@@ -684,6 +792,8 @@ iframe {
         background-attachment: fixed, scroll;
     }
 }
+
+/* Media MIN-WIDTH */
 
 @media (min-width: 992px) {
     .masthead {
