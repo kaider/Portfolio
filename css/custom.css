@@ -389,9 +389,8 @@ a[data-fancybox] img {
 
 .galleryProduct {
     margin: 0;
-    padding: 8px;
+    padding: 10px;
     position: relative;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .galleryThumb img {
@@ -400,17 +399,22 @@ a[data-fancybox] img {
 
 .galleryInfo{
 	position: absolute;
-    background: rgba(0,0,0,0.5);
-    bottom: 0;
-    padding: 20px;
+    background: rgba(0,0,0,0.65);
+    bottom: 10px;
+    padding: 15px;
 	overflow:hidden;
 	color:#fff;
 	display:none;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     z-index: 2;
-    width: 94%;
+    width: calc(100% - 20px);
     text-align: center;
+}
+
+.galleryInfo p,
+.galleryInfo h5 {
+    margin: 0;
 }
 
 .galleryProduct:hover .galleryInfo{
@@ -440,7 +444,6 @@ a[data-fancybox] img {
     box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
 
-#VTP_Definition img,
 #VTP_Ideation img,
 #VTP_Prototyping img {
     padding: 1rem 2rem 0 2rem;
@@ -458,7 +461,8 @@ a[data-fancybox] img {
 }
 
 #AFA_Research,
-#AFA_Evaluation {
+#AFA_Evaluation,
+#AFA_Final {
     padding: 9.375rem 0;
     background: #DDE6EE;
     box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
@@ -469,13 +473,27 @@ a[data-fancybox] img {
 }
 
 #AFA_Research img {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1.5rem 0 1.5rem;
     flex: 0 0 auto;
     width: 25%;
 }
 
 #AFA_Ideation img {
     padding: 1rem 4rem 9.375rem 4rem;
+    margin-bottom: 3rem;
+}
+
+#AFA_Prototyping .galleryMain {
+    background-color: #2F373C;
+    margin: 0 auto 3rem auto;
+    padding: 4rem;
+}
+
+
+#AFA_Prototyping .galleryMain h6 {
+    color: white;
+    font-weight: 400;
+    padding-bottom: 1rem;
 }
 
 /*  Figma Embeb */
@@ -530,18 +548,35 @@ iframe {
     background-image: url("../assets/img/UX_AFA/UX_AFA_main.png");
 }
 
-.caseStudyTD .accordion-item {
-    background-color: var(--bs-gray-300);
+/* Accordions */
+#TD_Final .accordion-item {
+    background-color: var(--bs-gray-50);
     border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
-.caseStudyTD .accordion-button:focus {
-    background-color: var(--bs-gray-300);
+#TD_Final .accordion-button:focus {
+    background-color: var(--bs-gray-50);
     box-shadow: none;
 }
 
-.caseStudyTD .accordion-button:not(.collapsed) {
-    color: var(--bs-gray-600);
+#TD_Final .accordion-button:not(.collapsed) {
+    background-color: var(--bs-gray-50);
+    color: var(--bs-gray-400);
+}
+
+#AFA_Final .accordion-button {
+    background-color: #DDE6EE;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+#AFA_Final .accordion-button:not(.collapsed) {
+    background-color: #E7F1F8;
+    color: var(--bs-gray-400);
+    box-shadow: none;
+}
+
+#AFA_Final .accordion-collapse {
+    background-color: #E7F1F8;
 }
 
 .hero-section {
@@ -611,7 +646,7 @@ iframe {
     margin-bottom: 5rem;
 }
 
-/* Screen media MAX-WIDTH */
+/* MAX-WIDTH 1200 */
 @media (max-width:1200px) {
     .UXCaseTag {
         padding: 4px 4px !important;
@@ -619,6 +654,7 @@ iframe {
     }
 }
 
+/* MAX-WIDTH 992 */
 @media (max-width: 992px) {
     .playFair {
         font-size: calc(20px + (35 - 20) * ((100vw - 375px) / (1600 - 375)));
@@ -672,13 +708,14 @@ iframe {
         padding: 0 10px 0 10px;
     }
     #AFA_Research img {
-        padding: 3rem 0.5rem;
+        padding: 3rem 0.5rem 0 0.5rem;
     }
     #AFA_Ideation img {
         padding: 0 1.5rem 7rem 1.5rem;
     }
 }
 
+/* MAX-WIDTH 768 */
 @media (max-width: 768px) {
     .navbar .dropdown-menu {
         border: none;
@@ -721,10 +758,15 @@ iframe {
     }
 }
 
+/* MAX_WIDTH 576 */
 @media (max-width: 576px) {
     .masthead-sub h1 {
         font-size: 2rem;
         line-height: 3rem;
+    }
+    .galleryInfo{
+        padding: 10px;
+        display:block;
     }
     .UXCaseSwap .hvr-sweep {
         font-size: 0.95rem;
@@ -760,8 +802,13 @@ iframe {
     li {
         font-size: 14px;
     }
+    #AFA_Prototyping .galleryMain {
+        margin: 0 auto 1rem auto;
+        padding: 1.5rem;
+    }
 }
 
+/* MAX-WIDTH 479 */
 @media screen and (max-width: 479px) {
     .project-section-1 {
         margin-bottom: 0px;
@@ -793,8 +840,7 @@ iframe {
     }
 }
 
-/* Media MIN-WIDTH */
-
+/* MIN-WIDTH 992 */
 @media (min-width: 992px) {
     .masthead {
         height: 88vh;
@@ -889,6 +935,7 @@ iframe {
     }
 }
 
+/* MIN-WIDTH 768 */
 @media (min-width: 768px) {
     .UXCaseTeam {
         margin: 0;
