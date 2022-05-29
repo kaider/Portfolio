@@ -178,7 +178,7 @@
 }
 
 .projects-section {
-    padding: 8rem 0 2rem 0;
+    padding-top: 8rem;
 }
 
 .projects-section .featured-text-right {
@@ -218,6 +218,7 @@
     margin-left: 10px;
 }
 
+/* UX Case thumbnails */
 .UXCase {
   margin: 0 0 12.5rem 0;
 }
@@ -395,7 +396,6 @@ a[data-fancybox] img {
 
 .galleryProduct {
     margin: 0;
-    padding: 10px;
     position: relative;
 }
 
@@ -427,6 +427,22 @@ a[data-fancybox] img {
 	display:block;
    -webkit-transition: 0.5s;
     transition: 0.5s;
+}
+
+/* Illustrations */
+#illustrations {
+    padding: 9rem 0;
+    background-color: #DDE6EE;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+#illustrations .galleryProduct {
+    padding: 0;
+}
+
+#illustrations .galleryInfo {
+    width: 100%;
+    bottom: 0;
 }
 
 /* Individual case study */
@@ -487,6 +503,10 @@ a[data-fancybox] img {
 #AFA_Ideation img {
     padding: 1rem 4rem 9.375rem 4rem;
     margin-bottom: 3rem;
+}
+
+#AFA_Prototyping .galleryProduct {
+    padding: 10px;
 }
 
 #AFA_Prototyping .galleryMain {
