@@ -436,12 +436,12 @@ a[data-fancybox] img {
     box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
 
-#illustrations .galleryProduct {
+/* #illustrations .galleryProduct {
     padding: 0;
-}
+} */
 
 #illustrations .galleryInfo {
-    width: 100%;
+    width: calc(100% - var(--bs-gutter-x));
     bottom: 0;
 }
 
@@ -580,6 +580,13 @@ iframe {
 }
 
 /* Social Media footer */
+.socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 .socialIcon img {
     max-height: 25px;
 }
@@ -617,6 +624,7 @@ iframe {
     background-size: cover;
     background-attachment: fixed;
     background-image: url("../assets/img/bg_main.png");
+    object-fit: cover;
 }
   
 .caseStudyVTP .hero-section {
@@ -810,6 +818,10 @@ iframe {
     }
     .aboutMeIntro h1 {
         text-align: left;
+    }
+
+    .socialIcon img {
+        margin-top: 10px;
     }
 }
 
