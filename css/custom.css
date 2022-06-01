@@ -914,8 +914,9 @@ iframe {
         padding-top: 2.5rem;
     }
 
-    #illustrations img:hover {
+    #illustrations img {
         filter: none;
+        margin-bottom: 5px;
     }
 
     .picturesMain2,
