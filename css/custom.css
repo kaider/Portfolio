@@ -452,7 +452,7 @@ a[data-fancybox] img {
 }
 
 .picturesMain2 img {
-    max-height: calc(120px + 6vw);
+    max-height: calc(100px + 9vw);
     object-fit: cover;
 }
 
