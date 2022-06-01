@@ -339,7 +339,7 @@ a[data-fancybox] img {
 }
   
 .fancybox__container {
-    --fancybox-bg: rgba(0, 0, 0, 0.75);
+    --fancybox-bg: rgba(0, 0, 0, 0.85);
     --fancybox-thumbs-width: 48px;
     --fancybox-thumbs-ratio: 1;
     --carousel-button-bg: rgb(91 78 76 / 74%);
@@ -394,11 +394,6 @@ a[data-fancybox] img {
     display: none;
 }
 
-.galleryProduct {
-    margin: 0;
-    position: relative;
-}
-
 .galleryThumb img {
     width: 100%;
 }
@@ -423,26 +418,51 @@ a[data-fancybox] img {
     margin: 0;
 }
 
-.galleryProduct:hover .galleryInfo{
-	display:block;
-   -webkit-transition: 0.5s;
-    transition: 0.5s;
-}
-
 /* Illustrations */
 #illustrations {
     padding: 9rem 0;
-    background-color: #DDE6EE;
+    background-color: #0F171C;
     box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* #illustrations .galleryProduct {
-    padding: 0;
-} */
+#illustrations img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid var(--bs-gray-100);
+    filter: grayscale(30%) brightness(50%);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
 
-#illustrations .galleryInfo {
-    width: calc(100% - var(--bs-gutter-x));
-    bottom: 0;
+#illustrations img:hover {
+    filter: none;
+    box-shadow: 0 0 12px rgba(255,255,255, 0.55);
+}
+
+.picturesMain2,
+.picturesMain3 {
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+    -webkit-column-gap:10px;
+    -moz-column-gap:10px;
+    column-gap:10px;
+}
+
+.picturesMain2 img {
+    max-height: calc(120px + 6vw);
+    object-fit: cover;
+}
+
+.picturesMain4 {
+    -webkit-column-count:4;
+    -moz-column-count:4;
+    column-count:4;
+    -webkit-column-gap:10px;
+    -moz-column-gap:10px;
+    column-gap:10px;
 }
 
 /* Individual case study */
@@ -483,8 +503,7 @@ a[data-fancybox] img {
 }
 
 #AFA_Research,
-#AFA_Evaluation,
-#AFA_Final {
+#AFA_Evaluation {
     padding: 9.375rem 0;
     background: #DDE6EE;
     box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
@@ -492,6 +511,8 @@ a[data-fancybox] img {
 
 #AFA_Final {
     padding: 9.375rem 0 2rem 0;
+    background: #DDE6EE;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
 
 #AFA_Research img {
@@ -507,6 +528,14 @@ a[data-fancybox] img {
 
 #AFA_Prototyping .galleryProduct {
     padding: 10px;
+    margin: 0;
+    position: relative;
+}
+
+#AFA_Prototyping .galleryProduct:hover .galleryInfo{
+    display:block;
+   -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 #AFA_Prototyping .galleryMain {
@@ -712,7 +741,7 @@ iframe {
     background-image: url("../assets/img/Illustrations/201802_MBTA.png");
 }
 
-/* MAX-WIDTH 1200 */
+/* Screen size MAX-WIDTH 1200 */
 @media (max-width:1200px) {
     .UXCaseLabel p {
         padding: 4px 4px !important;
@@ -720,7 +749,7 @@ iframe {
     }
 }
 
-/* MAX-WIDTH 992 */
+/* Screen size MAX-WIDTH 992 */
 @media (max-width: 992px) {
     .navbar .dropdown-menu {
         background-color: transparent;
@@ -769,9 +798,17 @@ iframe {
     .aboutMeTitle {
         padding-top: 6rem;
     }
+    .picturesMain4 {
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+    -webkit-column-gap:10px;
+    -moz-column-gap:10px;
+    column-gap:10px;
+}
 }
 
-/* MAX-WIDTH 768 */
+/* Screen size MAX-WIDTH 768 */
 @media (max-width: 768px) {
     .navbar .dropdown-menu {
         border: none;
@@ -825,7 +862,7 @@ iframe {
     }
 }
 
-/* MAX_WIDTH 576 */
+/* Screen size MAX_WIDTH 576 */
 @media (max-width: 576px) {
     .galleryInfo{
         padding: 10px;
@@ -876,9 +913,19 @@ iframe {
     .aboutMeTitle {
         padding-top: 2.5rem;
     }
+    .picturesMain2,
+    .picturesMain3,
+    .picturesMain4 {
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+    -webkit-column-gap:5px;
+    -moz-column-gap:5px;
+    column-gap:5px;
+}
 }
 
-/* MAX-WIDTH 479 */
+/* Screen size MAX-WIDTH 479 */
 @media screen and (max-width: 479px) {
     .project-section-1 {
         margin-bottom: 0px;
@@ -910,7 +957,7 @@ iframe {
     }
 }
 
-/* MIN-WIDTH 992 */
+/* Screen size MIN-WIDTH 992 */
 @media (min-width: 992px) {
     .masthead {
         height: 88vh;
@@ -1005,7 +1052,7 @@ iframe {
     }
 }
 
-/* MIN-WIDTH 768 */
+/* Screen size MIN-WIDTH 768 */
 @media (min-width: 768px) {
     .UXCaseTeam {
         margin: 0;
