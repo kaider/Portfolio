@@ -1,9 +1,13 @@
 .playFair {
-    line-height: 47px;
     letter-spacing: 0.25px;
     font-weight: 700;
-    font-family: 'Playfair Display', serif;
-    font-size: 35px;
+    font-family: 'Playfair Display', serif !important;
+    font-size: calc(22px + 1vw);
+    line-height: calc(28px + 1vw);
+}
+
+.lato {
+    font-family: 'Lato', sans-serif !important;
 }
 
 .navbar .dropdown-menu{
@@ -74,12 +78,6 @@
     color: #4D8C61;
 }
 
-.caseStudyVTP .hvr-sweep:active,
-.caseStudyVTP .hvr-sweep:focus,
-.caseStudyVTP .hvr-sweep:hover {
-  opacity: 1;
-}
-
 #mainNav .navbar-nav .nav-item:hover{
     color: fade(#fff, 80%);
     outline: none;
@@ -127,8 +125,8 @@
 .masthead-sub h1 {
     font-family: 'Playfair Display', serif !important;
     font-weight: 700;
-    font-size: 4rem;
-    line-height: 3.75rem;
+    font-size: calc(20px + 3vw);
+    line-height: calc(25px + 3vw);
     letter-spacing: 0.25px;
     background: #141610;
     -webkit-text-fill-color: transparent;
@@ -137,7 +135,7 @@
 }
 
 .caseStudyTD h1 {
-    line-height: 5rem;
+    line-height: calc(37px + 3vw);
 }
 
 .masthead-sub h2 {
@@ -145,7 +143,8 @@
     font-weight: 400 !important;
     line-height: 22px !important;
 }
- 
+
+/* Title fade animations */
 .topFade {
     opacity: 0;
     animation: topFadeOut 1200ms 500ms ease-out forwards;
@@ -164,7 +163,7 @@
 
 .fadeIn-2 {
     opacity: 0;
-    animation: fadeInText 2500ms 500ms ease-out forwards;
+    animation: fadeInText 3500ms 200ms ease-out forwards;
 }
 
 .fadeIn-1{
@@ -179,7 +178,7 @@
 }
 
 .projects-section {
-    padding: 8rem 0 2rem 0;
+    padding-top: 8rem;
 }
 
 .projects-section .featured-text-right {
@@ -190,6 +189,7 @@
     padding: 0 6rem 0 0;
 }
 
+/* leading line following line */
 .leadingLine,
 .followingLine {
     width: 100%;
@@ -218,6 +218,7 @@
     margin-left: 10px;
 }
 
+/* UX Case thumbnails */
 .UXCase {
   margin: 0 0 12.5rem 0;
 }
@@ -255,7 +256,7 @@ div.UXCaseLabel {
   display: flex;
 }
 
-.UXCaseLabel .UXCaseTag {
+.UXCaseLabel p {
   color: #9D9D9D;
   border: 1px solid #9D9D9D;
   font-family: 'Lato', sans-serif;
@@ -285,6 +286,7 @@ div.UXCaseLabel {
 
 .UXCaseButton {
   margin-top: 0rem;
+
 }
 
 .UXCaseTeam {
@@ -307,7 +309,12 @@ div.UXCaseLabel {
 }
 
 .UXCaseSwap p {
-    margin: 0.5rem 0.5rem 0.9rem 0;
+    margin: 0.5rem 0.5rem 0.9rem 0.2rem;
+    font-size: 20px;
+}
+
+.UXCaseSwap .hvr-sweep {
+    font-size: 20px;
 }
 
 /* Fancybox Image Gallery */
@@ -332,7 +339,7 @@ a[data-fancybox] img {
 }
   
 .fancybox__container {
-    --fancybox-bg: rgba(0, 0, 0, 0.75);
+    --fancybox-bg: rgba(0, 0, 0, 0.85);
     --fancybox-thumbs-width: 48px;
     --fancybox-thumbs-ratio: 1;
     --carousel-button-bg: rgb(91 78 76 / 74%);
@@ -387,12 +394,6 @@ a[data-fancybox] img {
     display: none;
 }
 
-.galleryProduct {
-    margin: 0;
-    padding: 10px;
-    position: relative;
-}
-
 .galleryThumb img {
     width: 100%;
 }
@@ -417,10 +418,51 @@ a[data-fancybox] img {
     margin: 0;
 }
 
-.galleryProduct:hover .galleryInfo{
-	display:block;
-   -webkit-transition: 0.5s;
+/* Illustrations */
+#illustrations {
+    padding: 9rem 0;
+    background-color: #0F171C;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+#illustrations img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid var(--bs-gray-100);
+    filter: grayscale(30%) brightness(50%);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
     transition: 0.5s;
+}
+
+#illustrations img:hover {
+    filter: none;
+    box-shadow: 0 0 12px rgba(255,255,255, 0.55);
+}
+
+.picturesMain2,
+.picturesMain3 {
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+    -webkit-column-gap:10px;
+    -moz-column-gap:10px;
+    column-gap:10px;
+}
+
+.picturesMain2 img {
+    max-height: calc(100px + 9vw);
+    object-fit: cover;
+}
+
+.picturesMain4 {
+    -webkit-column-count:4;
+    -moz-column-count:4;
+    column-count:4;
+    -webkit-column-gap:10px;
+    -moz-column-gap:10px;
+    column-gap:10px;
 }
 
 /* Individual case study */
@@ -461,8 +503,7 @@ a[data-fancybox] img {
 }
 
 #AFA_Research,
-#AFA_Evaluation,
-#AFA_Final {
+#AFA_Evaluation {
     padding: 9.375rem 0;
     background: #DDE6EE;
     box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
@@ -470,6 +511,8 @@ a[data-fancybox] img {
 
 #AFA_Final {
     padding: 9.375rem 0 2rem 0;
+    background: #DDE6EE;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.15), inset 0px 8px 8px rgba(0, 0, 0, 0.15);
 }
 
 #AFA_Research img {
@@ -481,6 +524,18 @@ a[data-fancybox] img {
 #AFA_Ideation img {
     padding: 1rem 4rem 9.375rem 4rem;
     margin-bottom: 3rem;
+}
+
+#AFA_Prototyping .galleryProduct {
+    padding: 10px;
+    margin: 0;
+    position: relative;
+}
+
+#AFA_Prototyping .galleryProduct:hover .galleryInfo{
+    display:block;
+   -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 #AFA_Prototyping .galleryMain {
@@ -496,9 +551,73 @@ a[data-fancybox] img {
     padding-bottom: 1rem;
 }
 
+/* About Me */
+.aboutMeTitle h1{
+    font-family: 'IBM Plex Serif', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: calc(20px + 2vw) !important;
+    line-height: calc(22px + 2vw);
+    letter-spacing: 0.25px;
+    margin: 0;
+}
+
+.aboutMeIntro,
+.aboutMeXP,
+.aboutMeEnd {
+    margin: 9.375rem auto;
+}
+
+.aboutMeIntro h1 {
+    font-family: 'IBM Plex Serif', sans-serif !important;
+    font-weight: 300;
+    font-size: calc(25px + 4vw);
+    line-height: calc(20px + 4.5vw);
+    letter-spacing: -1px;
+    text-align: right;
+    margin: 0;
+}
+
+.aboutMeIntro h5 {
+    font-size: calc(14px + 0.3vw) !important;
+    line-height: calc(22px + 0.3vw);
+}
+
+.aboutMeTag {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.aboutMeTag p{
+    background: #141610;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 0.15rem;
+    padding: 1px 8px;
+}
+
+.aboutMeEnd h5{
+    font-weight: 400;
+}
+
 /*  Figma Embeb */
 iframe {
     height: 95vh;
+}
+
+/* Social Media footer */
+.socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socialIcon img {
+    max-height: 25px;
 }
 
 /*  Hero section */
@@ -534,6 +653,7 @@ iframe {
     background-size: cover;
     background-attachment: fixed;
     background-image: url("../assets/img/bg_main.png");
+    object-fit: cover;
 }
   
 .caseStudyVTP .hero-section {
@@ -617,58 +737,24 @@ iframe {
     background-image: url("../assets/img/UX_VTP/UX_VTP_main.png");
 }
 
-.aboutPage .hero-section {
-    background-image: url("../assets/img/About.png");
+.aboutMe .hero-section {
+    background-image: url("../assets/img/Illustrations/201802_MBTA.png");
 }
 
-/* About me */
-.aboutMeTag {
-    font-family: 'IBM Plex Serif', sans-serif !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 3.4rem;
-    line-height: 74px;
-    letter-spacing: 0.25px;
-}
-  
-.aboutMeBody {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
-.about-section {
-    padding-top: 10rem;
-    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-}
-.about-section p {
-    margin-bottom: 5rem;
-}
-
-/* MAX-WIDTH 1200 */
+/* Screen size MAX-WIDTH 1200 */
 @media (max-width:1200px) {
-    .UXCaseTag {
+    .UXCaseLabel p {
         padding: 4px 4px !important;
         margin: 0 4px 0 0 !important;
     }
 }
 
-/* MAX-WIDTH 992 */
+/* Screen size MAX-WIDTH 992 */
 @media (max-width: 992px) {
-    .playFair {
-        font-size: calc(20px + (35 - 20) * ((100vw - 375px) / (1600 - 375)));
-        line-height: 35px;
-    }
     .navbar .dropdown-menu {
         background-color: transparent;
         box-shadow: none;
         padding-bottom: 1rem;
-    }
-    .masthead h1 {
-        font-size: calc(50px + (64 - 50) * ((100vw - 375px) / (1600 - 375)));
-        line-height: 6.5rem;
-        letter-spacing: 0.8rem;
     }
     .hero-section {
         display: block;
@@ -702,20 +788,27 @@ iframe {
         font-size: 1rem;
     }
 
-    .aboutMeTag {
-        font-size: 1.5rem;
-        line-height: 2rem;
-        padding: 0 10px 0 10px;
-    }
     #AFA_Research img {
         padding: 3rem 0.5rem 0 0.5rem;
     }
     #AFA_Ideation img {
         padding: 0 1.5rem 7rem 1.5rem;
     }
+
+    .aboutMeTitle {
+        padding-top: 6rem;
+    }
+    .picturesMain4 {
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+    -webkit-column-gap:10px;
+    -moz-column-gap:10px;
+    column-gap:10px;
+}
 }
 
-/* MAX-WIDTH 768 */
+/* Screen size MAX-WIDTH 768 */
 @media (max-width: 768px) {
     .navbar .dropdown-menu {
         border: none;
@@ -756,14 +849,21 @@ iframe {
     #AFA_Ideation img {
         padding: 0 0 4.5rem 0;
     }
+    .aboutMeTitle {
+        padding-top: 9rem;
+        padding-left: 1rem;
+    }
+    .aboutMeIntro h1 {
+        text-align: left;
+    }
+
+    .socialIcon img {
+        margin-top: 10px;
+    }
 }
 
-/* MAX_WIDTH 576 */
+/* Screen size MAX_WIDTH 576 */
 @media (max-width: 576px) {
-    .masthead-sub h1 {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
     .galleryInfo{
         padding: 10px;
         display:block;
@@ -806,9 +906,26 @@ iframe {
         margin: 0 auto 1rem auto;
         padding: 1.5rem;
     }
+
+    .aboutMe .hero-section {
+        overflow: hidden;
+    }
+    .aboutMeTitle {
+        padding-top: 2.5rem;
+    }
+    .picturesMain2,
+    .picturesMain3,
+    .picturesMain4 {
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+    -webkit-column-gap:5px;
+    -moz-column-gap:5px;
+    column-gap:5px;
+}
 }
 
-/* MAX-WIDTH 479 */
+/* Screen size MAX-WIDTH 479 */
 @media screen and (max-width: 479px) {
     .project-section-1 {
         margin-bottom: 0px;
@@ -840,7 +957,7 @@ iframe {
     }
 }
 
-/* MIN-WIDTH 992 */
+/* Screen size MIN-WIDTH 992 */
 @media (min-width: 992px) {
     .masthead {
         height: 88vh;
@@ -935,7 +1052,7 @@ iframe {
     }
 }
 
-/* MIN-WIDTH 768 */
+/* Screen size MIN-WIDTH 768 */
 @media (min-width: 768px) {
     .UXCaseTeam {
         margin: 0;
