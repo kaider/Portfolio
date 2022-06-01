@@ -429,7 +429,7 @@ a[data-fancybox] img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
-    border: 1px solid var(--bs-gray-100);
+    border: 1px solid white;
     filter: grayscale(30%) brightness(50%);
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -913,6 +913,11 @@ iframe {
     .aboutMeTitle {
         padding-top: 2.5rem;
     }
+
+    #illustrations img:hover {
+        filter: none;
+    }
+
     .picturesMain2,
     .picturesMain3,
     .picturesMain4 {
