@@ -601,6 +601,13 @@ a[data-fancybox] img {
     font-weight: 400;
 }
 
+.aboutMeEnd h6 {
+    margin: 0;
+    align-self: center;
+    line-height: 24px;
+    font-weight: 400;
+}
+
 /*  Figma Embeb */
 iframe {
     height: 95vh;
@@ -917,16 +924,24 @@ iframe {
         margin-bottom: 5px;
     }
 
+    .pictures3Da {
+        -webkit-column-count:1;
+        -moz-column-count:1;
+        column-count:1;
+        -webkit-column-gap:0;
+        -moz-column-gap:0;
+        column-gap:0;
+    }
+
     .picturesTrad,
-    .pictures3D,
     .pictures3Db {
-    -webkit-column-count:2;
-    -moz-column-count:2;
-    column-count:2;
-    -webkit-column-gap:5px;
-    -moz-column-gap:5px;
-    column-gap:5px;
-}
+        -webkit-column-count:2;
+        -moz-column-count:2;
+        column-count:2;
+        -webkit-column-gap:5px;
+        -moz-column-gap:5px;
+        column-gap:5px;
+    }
 }
 
 /* Screen size MAX-WIDTH 479 */
