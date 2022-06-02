@@ -21,10 +21,8 @@
 }
 
 .dropDownCat {
-    padding: 0.5rem 0 0.75rem 1rem;
-    --bs-text-opacity: 1;
-    color: #7B7B7B !important;
-    font-weight: 400 !important;
+    padding-bottom: 0.75rem;
+    font-weight: 600;
 }
 
 #mainNav {
@@ -441,8 +439,7 @@ a[data-fancybox] img {
     box-shadow: 0 0 12px rgba(255,255,255, 0.55);
 }
 
-.picturesMain2,
-.picturesMain3 {
+.pictures3Da {
     -webkit-column-count:3;
     -moz-column-count:3;
     column-count:3;
@@ -451,12 +448,13 @@ a[data-fancybox] img {
     column-gap:10px;
 }
 
-.picturesMain2 img {
-    max-height: calc(100px + 9vw);
+.picturesTrad img {
+    max-height: calc(100px + 8vw);
     object-fit: cover;
 }
 
-.picturesMain4 {
+.picturesTrad,
+.pictures3Db {
     -webkit-column-count:4;
     -moz-column-count:4;
     column-count:4;
@@ -798,7 +796,7 @@ iframe {
     .aboutMeTitle {
         padding-top: 6rem;
     }
-    .picturesMain4 {
+    .pictures3Db {
     -webkit-column-count:3;
     -moz-column-count:3;
     column-count:3;
@@ -919,9 +917,9 @@ iframe {
         margin-bottom: 5px;
     }
 
-    .picturesMain2,
-    .picturesMain3,
-    .picturesMain4 {
+    .picturesTrad,
+    .pictures3D,
+    .pictures3Db {
     -webkit-column-count:2;
     -moz-column-count:2;
     column-count:2;
