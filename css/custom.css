@@ -430,7 +430,7 @@ a[data-fancybox] img {
     height: auto;
     margin-bottom: 10px;
     border: 1px solid white;
-    filter: grayscale(30%) brightness(50%);
+    filter: grayscale(50%) brightness(50%);
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
