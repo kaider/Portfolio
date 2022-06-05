@@ -429,7 +429,7 @@ a[data-fancybox] img {
     height: auto;
     margin-bottom: 10px;
     border: 1px solid white;
-    filter: grayscale(50%) brightness(50%);
+    filter: grayscale(50%) brightness(70%);
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
@@ -437,7 +437,7 @@ a[data-fancybox] img {
 
 #illustrations img:hover {
     filter: none;
-    box-shadow: 0 0 12px rgba(255,255,255, 0.55);
+    box-shadow: 0 0 12px rgba(255,255,255, 0.65);
 }
 
 .pictures3Da {
