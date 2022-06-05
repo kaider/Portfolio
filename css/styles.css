@@ -2192,7 +2192,7 @@ progress {
   -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
-.hvr-sweep:before {
+.hvr-sweep::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -2225,9 +2225,9 @@ progress {
 .hvr-sweep:hover {
   opacity: 1;
 }
-.hvr-sweep:active:before,
-.hvr-sweep:focus:before,
-.hvr-sweep:hover:before {
+.hvr-sweep:active::before,
+.hvr-sweep:focus::before,
+.hvr-sweep:hover::before {
   -webkit-transform: scaleY(0.2);
   -ms-transform: scaleY(0.2);
   transform: scaleY(0.2);
@@ -3242,7 +3242,9 @@ progress {
   padding-right: 0.5625rem;
   padding-left: 0.5625rem;
 }
-.dropdown-toggle-split::after, .dropup .dropdown-toggle-split::after, .dropend .dropdown-toggle-split::after {
+.dropdown-toggle-split::after,
+.dropup .dropdown-toggle-split::after,
+.dropend .dropdown-toggle-split::after {
   margin-left: 0;
 }
 .dropstart .dropdown-toggle-split::before {
