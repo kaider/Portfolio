@@ -5,7 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="Leon Dinh" content="Portfolio of Product Designer and 3D Artist, Leon Dinh" />
         <title>Leon Dinh - Product Designer</title>
+
+        <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="./assets/favicon2.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+        <link rel="manifest" href="./assets/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
 
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
@@ -60,7 +66,7 @@
                                 <div class="row mainDropdown">
                                     <div class="col-md-7 order-1 order-md-0 mt-3 mt-md-0">
                                         <ul class="list-unstyled">
-                                            <li class="followingLine dropDownCat">Case Studies</li>
+                                            <li><a class="dropdown-item dropDownCat" href="#projects">UX Case studies</a></li>
                                             <li><a class="dropdown-item" href="./CaseStudies/UX_VTP.html">Virtual Teaching Platform</a></li>
                                             <li><a class="dropdown-item" href="./CaseStudies/UX_TD.html">TreasuryDirect.gov</a></li>
                                             <li><a class="dropdown-item" href="./CaseStudies/UX_AFA.html">ArtsForAll.com</a></li>
@@ -70,9 +76,10 @@
     
                                     <div class="col-md-5 order-0 order-md-1">
                                         <ul class="list-unstyled">
-                                            <li class="followingLine dropDownCat">Categories</li>
-                                            <li><a class="dropdown-item" href="#projects">UX Case studies</a></li>
-                                            <li><a class="dropdown-item" href="#illustrations">Illustrations</a></li>
+                                            <li><a class="dropdown-item dropDownCat" href="#illustrations">Illustrations</a></li>
+                                            <li><a class="dropdown-item" href="#3Dassets">3D assets</a></li>
+                                            <li><a class="dropdown-item" href="#2Dassets">2D illustrations</a></li>
+                                            <li><a class="dropdown-item" href="#productDesign">Product design</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -80,7 +87,7 @@
                           </li>
                         
                         <li class="nav-item">
-                            <a class="fw-semibold nav-link" href="./About.html">
+                            <a class="fw-semibold nav-link" href="About.html">
                                 ABOUT
                             </a>
                         </li>
@@ -207,9 +214,9 @@
                     Illustrations
                 </h6>
                 <div class="row">
-                    <!-- Lo-fi Mobile -->
-                    <h6 class="pb-5 text-light text-opacity-75">3D assets</h6>
-                    <div class="container-fluid picturesMain3">
+                    <!-- 3D assets -->
+                    <h4 class="pb-5 mt-3 text-light text-opacity-75" id="3Dassets">3D assets</h4>
+                    <div class="container-fluid pictures3Da">
                         <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/3D/201901_AC_Ace1959_01_A.jpg" data-caption="1959 AC Ace">
                             <img class="" src="./assets/img/Illustrations/3D/201901_AC_Ace1959_01_A_TN.jpg">
                         </a>
@@ -229,7 +236,7 @@
                             <img class="" src="./assets/img/Illustrations/3D/201310_AstonMartin_DB9_2005_02_TN.png">
                         </a>
                     </div>
-                    <div class="container-fluid picturesMain4 mb-5 pb-5">
+                    <div class="container-fluid pictures3Db mb-5 pb-5">
                         <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/3D/201310_AstonMartin_DB9_2005_AO.png" data-caption="2005 Aston Martin DB9">
                             <img class="" src="./assets/img/Illustrations/3D/201310_AstonMartin_DB9_2005_AO_TN.png">
                         </a>
@@ -312,8 +319,10 @@
                             <img class="" src="./assets/img/Illustrations/3D/201805_Sample09_TN.jpg">
                         </a>
                     </div>
-                    <h6 class="py-5 text-light text-opacity-75">2D illustrations</h6>
-                    <div class="container-fluid picturesMain2">
+
+                    <!-- 2D illustrations -->
+                    <h4 class="py-5 mt-5 text-light text-opacity-75" id="2Dassets">2D illustrations</h4>
+                    <div class="container-fluid picturesTrad mb-5 pb-5">
                         <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/Others/201710_SFMTA.png" data-caption="San Francisco Municipal Transportation Agency">
                             <img class="" src="./assets/img/Illustrations/Others/201710_SFMTA_TN.png">
                         </a>
@@ -348,6 +357,139 @@
                             <img class="" src="./assets/img/Illustrations/Others/201502_Traditional_old_TN.jpg">
                         </a>
                     </div>
+
+                    <!-- Product design -->
+                    <h4 class="py-5 mt-5 text-light text-opacity-75" id="productDesign">Product Design</h4>
+
+                    <!-- Boring Box -->
+                    <div class="py-4 align-items-end">
+                        <h5 class="playFair text-light text-opacity-75">Boring Box TKL keyboard</h5>
+                        <h6 class="pt-4 pb-3 text-light text-opacity-75 fw-light">
+                            If you're interested in the full build,&nbsp;
+                            <a class="text-light text-opacity-75 fw-light" href="https://geekhack.org/index.php?topic=109511.0" data-tool-tip="https://geekhack.org/index.php?topic=109511.0" target="_blank">please click here.</a>
+                        </h6>
+                    </div>
+                    <div class="container-fluid picturesTrad mb-5">
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202004_Box_01.jpg" data-caption="BoringBox CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/202004_Box_01.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202004_Box_02.jpg" data-caption="BoringBox CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/202004_Box_02.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202004_Box_03.jpg" data-caption="BoringBox CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/202004_Box_03.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202004_Box_04.jpg" data-caption="BoringBox CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/202004_Box_04.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202004_Box_05.jpg" data-caption="BoringBox CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/202004_Box_05.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202004_Box_06.jpg" data-caption="BoringBox CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/202004_Box_06.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202004_Box_07.jpg" data-caption="BoringBox CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/202004_Box_07.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202104_Box_01.jpg" data-caption="BoringBox Prototypes">
+                            <img class="" src="./assets/img/Illustrations/CAD/202104_Box_01.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202104_Box_02.jpg" data-caption="BoringBox Prototypes">
+                            <img class="" src="./assets/img/Illustrations/CAD/202104_Box_02.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202104_Box_03.jpg" data-caption="BoringBox Prototypes">
+                            <img class="" src="./assets/img/Illustrations/CAD/202104_Box_03.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202104_Box_04.jpg" data-caption="BoringBox Prototypes">
+                            <img class="" src="./assets/img/Illustrations/CAD/202104_Box_04.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202104_Box_05.jpg" data-caption="BoringBox Prototypes">
+                            <img class="" src="./assets/img/Illustrations/CAD/202104_Box_05.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202104_Box_06.jpg" data-caption="BoringBox Prototypes">
+                            <img class="" src="./assets/img/Illustrations/CAD/202104_Box_06.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202104_Box_07.jpg" data-caption="BoringBox Prototypes">
+                            <img class="" src="./assets/img/Illustrations/CAD/202104_Box_07.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202104_Box_08.jpg" data-caption="BoringBox Prototypes">
+                            <img class="" src="./assets/img/Illustrations/CAD/202104_Box_08.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202104_Box_09.jpg" data-caption="BoringBox Prototypes">
+                            <img class="" src="./assets/img/Illustrations/CAD/202104_Box_09.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202104_Box_10.jpg" data-caption="BoringBox Prototypes">
+                            <img class="" src="./assets/img/Illustrations/CAD/202104_Box_10.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/202104_Box_11.jpg" data-caption="BoringBox Prototypes">
+                            <img class="" src="./assets/img/Illustrations/CAD/202104_Box_11.jpg">
+                        </a>
+                    </div>
+
+                    <!-- Omron 75 -->
+                    <div class="py-4 align-items-end">
+                        <h5 class="playFair text-light text-opacity-75">Omron 75 keyboard</h5>
+                        <h6 class="pt-4 pb-3 text-light text-opacity-75 fw-light">
+                            If you're interested in the full build,&nbsp;
+                            <a class="text-light text-opacity-75 fw-light" href="https://deskthority.net/viewtopic.php?t=22022" data-tool-tip="https://deskthority.net/viewtopic.php?t=22022" target="_blank">please click here.</a>
+                        </h6>
+                    </div>
+                    <div class="container-fluid picturesTrad">
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201812_Omron75_02.JPG" data-caption="Omron 75 CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/201812_Omron75_02.JPG">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201812_Omron75_03.png" data-caption="Omron 75 CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/201812_Omron75_03.png">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201812_Omron75_04.JPG" data-caption="Omron 75 CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/201812_Omron75_04.JPG">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201812_Omron75_05.png" data-caption="Omron 75 CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/201812_Omron75_05.png">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201812_Omron75_06.png" data-caption="Omron 75 CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/201812_Omron75_06.png">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201812_Omron75_07.JPG" data-caption="Omron 75 Plates">
+                            <img class="" src="./assets/img/Illustrations/CAD/201812_Omron75_07.JPG">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201812_Omron75_08.JPG" data-caption="Omron 75 Plates">
+                            <img class="" src="./assets/img/Illustrations/CAD/201812_Omron75_08.JPG">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201812_Omron75_09.png" data-caption="Omron 75 Mounting Concept">
+                            <img class="" src="./assets/img/Illustrations/CAD/201812_Omron75_09.png">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201812_Omron75_11.JPG" data-caption="Omron 75 CAD Drawing">
+                            <img class="" src="./assets/img/Illustrations/CAD/201812_Omron75_11.JPG">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201812_Omron75_10.mp4" data-caption="Omron 75 Mounting Breakdown">
+                            <img class="" src="./assets/img/Illustrations/CAD/201812_Omron75_01.png">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201907_Omron75_05.jpg" data-caption="Omron 75 Bare Brass Prototype">
+                            <img class="" src="./assets/img/Illustrations/CAD/201907_Omron75_05.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201907_Omron75_09.jpg" data-caption="Omron 75 Bare Brass Prototype">
+                            <img class="" src="./assets/img/Illustrations/CAD/201907_Omron75_09.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201907_Omron75_07.jpg" data-caption="Omron 75 Bare Brass Prototype">
+                            <img class="" src="./assets/img/Illustrations/CAD/201907_Omron75_07.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201907_Omron75_08.jpg" data-caption="Omron 75 Bare Brass Prototype">
+                            <img class="" src="./assets/img/Illustrations/CAD/201907_Omron75_08.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201907_Omron75_01.jpg" data-caption="Omron 75 Cerakote Prototype">
+                            <img class="" src="./assets/img/Illustrations/CAD/201907_Omron75_01.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201907_Omron75_02.jpg" data-caption="Omron 75 Cerakote Prototype CF plate">
+                            <img class="" src="./assets/img/Illustrations/CAD/201907_Omron75_02.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201907_Omron75_03.jpg" data-caption="Omron 75 Cerakote Prototype Breakdown">
+                            <img class="" src="./assets/img/Illustrations/CAD/201907_Omron75_03.jpg">
+                        </a>
+                        <a class="galleryThumb" data-fancybox="gallery" href="./assets/img/Illustrations/CAD/201907_Omron75_04.jpg" data-caption="Omron 75 Cerakote Prototype">
+                            <img class="" src="./assets/img/Illustrations/CAD/201907_Omron75_04.jpg">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -357,8 +499,9 @@
             <div class="container px-4 px-lg-5 d-md-flex justify-content-center align-items-center">
                 <p class="text-center my-0 px-4">Copyright &copy; Leon Dinh <span id="currentYear"></span></p>
                 <div class="socialIcon">
-                    <a href="https://www.linkedin.com/in/leonxdinh/"> <img src="./assets/img/Logo_LinkedIn.png" alt="LinkedIn"></a>
-                    <a href="https://github.com/kaider/Portfolio"> <img src="./assets/img/Logo_GitHub.png" alt="LinkedIn"></a>
+                    <a href="https://www.linkedin.com/in/leonxdinh/" target="_blank" data-tool-tip="LinkedIn"> <img src="./assets/img/Logo_LinkedIn.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/kaider/Portfolio" target="_blank" data-tool-tip="Github Repo"> <img src="./assets/img/Logo_GitHub.png" alt="LinkedIn"></a>
+                    <a href="https://www.artstation.com/kaazzeerr" target="_blank" data-tool-tip="ArtStation"> <img src="./assets/img/Logo_ArtStation.png" alt="ArtStation"></a>
                 </div>
             </div>
         </footer>

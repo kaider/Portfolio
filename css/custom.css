@@ -2,8 +2,8 @@
     letter-spacing: 0.25px;
     font-weight: 700;
     font-family: 'Playfair Display', serif !important;
-    font-size: calc(22px + 1vw);
-    line-height: calc(28px + 1vw);
+    font-size: calc(1.375rem + 1vw);
+    line-height: calc(1.5rem + 1vw);
 }
 
 .lato {
@@ -21,10 +21,8 @@
 }
 
 .dropDownCat {
-    padding: 0.5rem 0 0.75rem 1rem;
-    --bs-text-opacity: 1;
-    color: #7B7B7B !important;
-    font-weight: 400 !important;
+    padding-bottom: 0.75rem;
+    font-weight: 600;
 }
 
 #mainNav {
@@ -125,8 +123,8 @@
 .masthead-sub h1 {
     font-family: 'Playfair Display', serif !important;
     font-weight: 700;
-    font-size: calc(20px + 3vw);
-    line-height: calc(25px + 3vw);
+    font-size: calc(1.25rem + 3vw);
+    line-height: calc(1.5rem + 3vw);
     letter-spacing: 0.25px;
     background: #141610;
     -webkit-text-fill-color: transparent;
@@ -135,7 +133,7 @@
 }
 
 .caseStudyTD h1 {
-    line-height: calc(37px + 3vw);
+    line-height: calc(2.25rem + 3vw);
 }
 
 .masthead-sub h2 {
@@ -240,14 +238,14 @@ img.UXCaseImg {
   -webkit-transition: all 0.65s;
   -o-transition: all 0.65s;
   transition: all 0.65s;
-  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.15)) drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25)); 
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.15)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
 }
 
 img.UXCaseImg:hover {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.35)); 
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.35)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.45)); 
 }
 
 div.UXCaseLabel {
@@ -406,6 +404,7 @@ a[data-fancybox] img {
 	overflow:hidden;
 	color:#fff;
 	display:none;
+    -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     z-index: 2;
@@ -429,8 +428,8 @@ a[data-fancybox] img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
-    border: 1px solid var(--bs-gray-100);
-    filter: grayscale(30%) brightness(50%);
+    border: 1px solid white;
+    filter: grayscale(50%) brightness(70%);
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
@@ -438,12 +437,10 @@ a[data-fancybox] img {
 
 #illustrations img:hover {
     filter: none;
-    border: none;
     box-shadow: 0 0 12px rgba(255,255,255, 0.65);
 }
 
-.picturesMain2,
-.picturesMain3 {
+.pictures3Da {
     -webkit-column-count:3;
     -moz-column-count:3;
     column-count:3;
@@ -452,12 +449,13 @@ a[data-fancybox] img {
     column-gap:10px;
 }
 
-.picturesMain2 img {
-    max-height: calc(100px + 9vw);
+.picturesTrad img {
+    max-height: calc(6.25rem + 8vw);
     object-fit: cover;
 }
 
-.picturesMain4 {
+.picturesTrad,
+.pictures3Db {
     -webkit-column-count:4;
     -moz-column-count:4;
     column-count:4;
@@ -557,8 +555,8 @@ a[data-fancybox] img {
     font-family: 'IBM Plex Serif', sans-serif !important;
     font-style: normal !important;
     font-weight: 700 !important;
-    font-size: calc(20px + 2vw) !important;
-    line-height: calc(22px + 2vw);
+    font-size: calc(1.25rem + 2vw) !important;
+    line-height: calc(1.35rem + 2vw);
     letter-spacing: 0.25px;
     margin: 0;
 }
@@ -572,16 +570,16 @@ a[data-fancybox] img {
 .aboutMeIntro h1 {
     font-family: 'IBM Plex Serif', sans-serif !important;
     font-weight: 300;
-    font-size: calc(25px + 4vw);
-    line-height: calc(20px + 4.5vw);
+    font-size: calc(1.6rem + 4vw);
+    line-height: calc(1.25rem + 4.5vw);
     letter-spacing: -1px;
     text-align: right;
     margin: 0;
 }
 
 .aboutMeIntro h5 {
-    font-size: calc(14px + 0.3vw) !important;
-    line-height: calc(22px + 0.3vw);
+    font-size: calc(0.9rem + 0.3vw) !important;
+    line-height: calc(1.375rem + 0.3vw);
 }
 
 .aboutMeTag {
@@ -604,6 +602,13 @@ a[data-fancybox] img {
     font-weight: 400;
 }
 
+.aboutMeEnd h6 {
+    margin: 0;
+    align-self: center;
+    line-height: 24px;
+    font-weight: 400;
+}
+
 /*  Figma Embeb */
 iframe {
     height: 95vh;
@@ -619,6 +624,33 @@ iframe {
 
 .socialIcon img {
     max-height: 25px;
+}
+
+a[data-tool-tip] {
+    position: relative;
+}
+
+a[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    align-self: center;
+    background-color: var(--bs-gray-100);
+    color: var(--bs-gray-700);
+    padding: 4px 10px;
+    margin: 0;
+    white-space: nowrap;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(0);
+    transition: bottom ease-in 0.15s, transform ease-in 0.15s;
+}
+
+a[data-tool-tip]:hover::after {
+    transform: scale(1);
+    bottom: 150%;
 }
 
 /*  Hero section */
@@ -653,8 +685,11 @@ iframe {
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("../assets/img/bg_main.png");
     object-fit: cover;
+}
+
+#page-top .hero-section {
+    background-image: url("../assets/img/bg_main.png");
 }
   
 .caseStudyVTP .hero-section {
@@ -667,6 +702,10 @@ iframe {
 
 .caseStudyAFA .hero-section {
     background-image: url("../assets/img/UX_AFA/UX_AFA_main.png");
+}
+
+.aboutMe .hero-section {
+    background-image: url("../assets/img/Illustrations/Others/201802_MBTA.png");
 }
 
 /* Accordions */
@@ -698,48 +737,6 @@ iframe {
 
 #AFA_Final .accordion-collapse {
     background-color: #E7F1F8;
-}
-
-.hero-section {
-    padding: 200px;
-    text-align: left;
-    position: static;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    overflow: hidden;
-    height: 90vh;
-    margin: auto;
-    float: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-image: url("../assets/img/bg_main.png");
-}
-  
-.caseStudyVTP .hero-section {
-    background-image: url("../assets/img/UX_VTP/UX_VTP_main.png");
-}
-
-.aboutMe .hero-section {
-    background-image: url("../assets/img/Illustrations/201802_MBTA.png");
 }
 
 /* Screen size MAX-WIDTH 1200 */
@@ -799,7 +796,7 @@ iframe {
     .aboutMeTitle {
         padding-top: 6rem;
     }
-    .picturesMain4 {
+    .pictures3Db {
     -webkit-column-count:3;
     -moz-column-count:3;
     column-count:3;
@@ -914,16 +911,30 @@ iframe {
     .aboutMeTitle {
         padding-top: 2.5rem;
     }
-    .picturesMain2,
-    .picturesMain3,
-    .picturesMain4 {
-    -webkit-column-count:2;
-    -moz-column-count:2;
-    column-count:2;
-    -webkit-column-gap:5px;
-    -moz-column-gap:5px;
-    column-gap:5px;
-}
+
+    #illustrations img {
+        filter: none;
+        margin-bottom: 5px;
+    }
+
+    .pictures3Da {
+        -webkit-column-count:1;
+        -moz-column-count:1;
+        column-count:1;
+        -webkit-column-gap:0;
+        -moz-column-gap:0;
+        column-gap:0;
+    }
+
+    .picturesTrad,
+    .pictures3Db {
+        -webkit-column-count:2;
+        -moz-column-count:2;
+        column-count:2;
+        -webkit-column-gap:5px;
+        -moz-column-gap:5px;
+        column-gap:5px;
+    }
 }
 
 /* Screen size MAX-WIDTH 479 */
@@ -936,23 +947,18 @@ iframe {
   
     .hero-section {
         display: block;
-        height: 90vh;
         margin: 32px auto 0px auto;
         padding: 200px 0px 140px 10px;
-        overflow: auto;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
         -webkit-box-pack: center;
-        -webkit-justify-content: center;
         -ms-flex-pack: center;
-        justify-content: center;
         background-image: url('../assets/img/bg_main.png'), -webkit-gradient(linear, left top, left bottom, from(#e8cf7d), to(#e8cf7d));
         background-image: url('../assets/img/bg_main.png'), linear-gradient(180deg, #e8cf7d, #e8cf7d);
         background-position: 69% 50%;
-        background-size: cover, auto;
         background-repeat: no-repeat, repeat;
         background-attachment: fixed, scroll;
     }
@@ -982,6 +988,7 @@ iframe {
         background-color: transparent;
         box-shadow: none;
         transition: background-color 0.3s ease-in-out;
+        -webkit-transition: background-color 0.3s ease-in-out;
     }
 
     #mainNav .nav-link {
