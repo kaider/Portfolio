@@ -437,6 +437,7 @@ a[data-fancybox] img {
 
 #illustrations img:hover {
     filter: none;
+    border: none;
     box-shadow: 0 0 12px rgba(255,255,255, 0.65);
 }
 
