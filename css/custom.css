@@ -481,11 +481,31 @@ a[data-fancybox] img {
 }
 
 #CW_Definition,
-#CW_Prototyping,
-#CW_Conclusion {
+#CW_Prototyping {
     padding: 9.375rem 0;
     background: #B2AA9D;
     box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.25), inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+#CW_Conclusion {
+    padding: 9.375rem 0 2rem 0;
+    background: #B2AA9D;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.25), inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+#collapseCW .card {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+#CW_Ideation .btn {
+    border: none;
+    padding: 10px 15px;
+    background-color: #594736;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
 }
 
 #VTP_Definition,
