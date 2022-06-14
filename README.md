@@ -8,3 +8,4 @@ https://kaider.github.io/Portfolio
 2. Add bootstrap collapse to Gallery
 3. Add parallax
 4. Migrate keyboard write-ups to the website
+5. React.JS

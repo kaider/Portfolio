@@ -64,6 +64,12 @@
     color: #7EA19F;
 }
 
+.caseStudyCW #mainNav.navbar-shrink .navbar-brand:focus,
+.caseStudyCW #mainNav.navbar-shrink .navbar-brand:active,
+.caseStudyCW #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #807566;
+}
+
 .caseStudyVTP #mainNav.navbar-shrink .navbar-brand:focus,
 .caseStudyVTP #mainNav.navbar-shrink .navbar-brand:active,
 .caseStudyVTP #mainNav.navbar-shrink .navbar-brand:hover {
@@ -235,9 +241,9 @@ img.UXCaseImg {
   height: auto;
   -webkit-animation-delay: 0.25s !important;
   animation-delay: 0.25s !important;
-  -webkit-transition: all 0.65s;
-  -o-transition: all 0.65s;
-  transition: all 0.65s;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
   filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.15)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
 }
 
@@ -289,9 +295,9 @@ div.UXCaseLabel {
 
 .UXCaseTeam {
     justify-content: center;
-    border: 1.5px solid var(--bs-gray-700);
+    border: 1px solid var(--bs-gray-300);
     border-radius: 0.5rem;
-    padding: 1.5rem 0 1.5rem 0;
+    padding: 2.5rem 0;
     margin: 0 5rem;
 }
 
@@ -437,6 +443,7 @@ a[data-fancybox] img {
 
 #illustrations img:hover {
     filter: none;
+    border: 1px solid var(--bs-gray-400);
     box-shadow: 0 0 12px rgba(255,255,255, 0.65);
 }
 
@@ -465,11 +472,38 @@ a[data-fancybox] img {
 }
 
 /* Individual case study */
+#CW_Research,
 #VTP_Research,
-#TD_Overview,
+#TD_Research,
 #AFA_Overview {
     margin-bottom: 9.375rem;
     padding-top: 3rem;
+}
+
+#CW_Definition,
+#CW_Prototyping {
+    padding: 9.375rem 0;
+    background: #B2AA9D;
+    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.25), inset 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+#collapseCW .card {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.shortH6 {
+    min-width: max-content;
+}
+
+#CW_Ideation .btn {
+    border: none;
+    padding: 10px 15px;
+    background-color: #594736;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
 }
 
 #VTP_Definition,
@@ -490,7 +524,7 @@ a[data-fancybox] img {
     padding: 1rem 2rem 0 2rem;
 }
 
-#TD_Ideation,
+#TD_Analysis,
 #TD_Prototyping {
     padding: 9.375rem 0;
     background: #A7B7AC;
@@ -692,6 +726,10 @@ a[data-tool-tip]:hover::after {
     background-image: url("../assets/img/bg_main.png");
 }
   
+.caseStudyCW .hero-section {
+    background-image: url("../assets/img/UX_CW/UX_CW_main.png");
+}
+
 .caseStudyVTP .hero-section {
     background-image: url("../assets/img/UX_VTP/UX_VTP_main.png");
 }
@@ -891,6 +929,7 @@ a[data-tool-tip]:hover::after {
     }
 
     #projects p,
+    .caseStudyCW p,
     .caseStudyAFA p,
     .caseStudyTD p,
     .caseStudyVTP p {
@@ -959,26 +998,22 @@ a[data-tool-tip]:hover::after {
         background-image: url('../assets/img/bg_main.png'), -webkit-gradient(linear, left top, left bottom, from(#e8cf7d), to(#e8cf7d));
         background-image: url('../assets/img/bg_main.png'), linear-gradient(180deg, #e8cf7d, #e8cf7d);
         background-position: 69% 50%;
-        background-repeat: no-repeat, repeat;
+        background-repeat: no-repeat;
         background-attachment: fixed, scroll;
     }
 }
 
 /* Screen size MIN-WIDTH 992 */
 @media (min-width: 992px) {
-    .masthead {
-        height: 88vh;
+    .masthead,
+    .masthead-sub {
+        height: 95vh;
         padding: 0;
     }
         
     .masthead h2 {
         max-width: 30rem;
         font-size: 1.25rem;
-    }
-
-    .masthead-sub {
-        height: 88vh;
-        padding: 0;
     }
 
     #mainNav {
@@ -1058,6 +1093,20 @@ a[data-tool-tip]:hover::after {
         color: #4D8C61 !important;
         border-bottom: 0.5rem solid #4D8C61 !important;
     }
+
+    .caseStudyCW .navbar-shrink .nav-link:hover {
+        color: #807566 !important;
+    }
+
+    .caseStudyCW .navbar-shrink .nav-link:active {
+        color: #807566 !important;
+    }
+
+    .caseStudyCW .navbar-shrink .nav-link.active {
+        color: #807566 !important;
+        border-bottom: 0.5rem solid #807566 !important;
+    }
+
 }
 
 /* Screen size MIN-WIDTH 768 */
