@@ -487,16 +487,14 @@ a[data-fancybox] img {
     box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.25), inset 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
-#CW_Conclusion {
-    padding: 9.375rem 0 2rem 0;
-    background: #B2AA9D;
-    box-shadow: inset 0px -8px 8px rgba(0, 0, 0, 0.25), inset 0px 8px 8px rgba(0, 0, 0, 0.25);
-}
-
 #collapseCW .card {
     border: none;
     border-radius: 0;
     background-color: transparent;
+}
+
+.shortH6 {
+    min-width: max-content;
 }
 
 #CW_Ideation .btn {
