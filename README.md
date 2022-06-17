@@ -5,8 +5,9 @@ https://kaider.github.io/Portfolio
 <br>
 # To do list
 1. Add navigation to UX case study
-2. Add bootstrap collapse to Gallery
-3. Add parallax
-4. Clean up
-5. Migrate keyboard write-ups to the website
-6. React.JS
+2. Lazy load
+3. Add bootstrap collapse to Gallery
+4. Add parallax
+5. Clean up
+6. Migrate keyboard write-ups to the website
+7. React.JS
