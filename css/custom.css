@@ -605,21 +605,16 @@ a[data-fancybox] img {
     text-decoration: none;
     transition-duration: 0.35s;
     display: flex;
-    flex-direction: end;
     align-items: center;
     justify-content: flex-end;
     gap: 5px;
 }
 
-.scrollerContainer a:hover p {
+.scrollerContainer a:hover p,
+.scrollerContainer a:focus p {
     opacity: 1;
     font-weight: bold;
     background-color: rgb(185, 185, 185);
-}
-
-.scrollerContainer a:hover span {
-    opacity: 1;
-    background-color: rgb(34, 34, 34);
 }
 
 .scrollerContainer span {
@@ -630,8 +625,36 @@ a[data-fancybox] img {
     height: 1rem;
     border-radius: 50%;
     display: inline-block;
-    opacity: 0.75;
+    position: relative;
+}
+
+.scrollerContainer span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 2px;
+    border-radius: 50%;
     transition-duration: 0.55s;
+    opacity: 0;
+    background-color: black;
+}
+
+.scrollerContainer a:hover span::after,
+.scrollerContainer a:focus span::after {
+    opacity: 1;
+}
+
+.scrollerContainer .scrollerActive p {
+    opacity: 1;
+    font-weight: bold;
+    background-color: rgb(185, 185, 185);
+}
+
+.scrollerContainer .scrollerActive span::after {
+    opacity: 1;
 }
 
 /* About Me */

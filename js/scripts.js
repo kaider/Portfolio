@@ -66,3 +66,35 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     },
   },
 });
+
+// scroller bar
+const sections = document.querySelectorAll('section');
+const scroller = document.querySelectorAll('.scrollerBtn');
+
+const activeSectionHandler = (currentSectionID) => {
+    scroller.forEach(link => {
+        if(link.dataset.section === currentSectionID) {
+            link.classList.add('scrollerActive');
+            return;
+        }
+        link.classList.remove('scrollerActive');
+    })
+}
+
+    // intersection observer
+const sectionWatcherCallback = (section, sectionWatcher) => {
+    section.forEach(section => {
+        if (!section.isIntersecting) {return};
+        activeSectionHandler(section.target.id);
+    })
+}
+
+const sectionWatcherOptions = {
+    threshold: .5
+}
+
+const sectionWatcher = new IntersectionObserver(sectionWatcherCallback, sectionWatcherOptions)
+
+sections.forEach(section => {
+    sectionWatcher.observe(section);
+});
