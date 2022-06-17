@@ -555,7 +555,7 @@ a[data-fancybox] img {
 }
 
 #AFA_Ideation img {
-    padding: 1rem 4rem 9.375rem 4rem;
+    padding: 1rem 0 9.375rem 4rem;
     margin-bottom: 3rem;
 }
 
@@ -582,6 +582,56 @@ a[data-fancybox] img {
     color: white;
     font-weight: 400;
     padding-bottom: 1rem;
+}
+
+/* Page Scroller */
+.scrollerContainer {
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(-5% , -50%);
+}
+
+.scrollerContainer p {
+    margin: 0;
+    opacity: 0.25;
+    transition-duration: 0.35s;
+    padding: 2px 10px;
+}
+
+.scrollerContainer a {
+    padding: 0.2rem;
+    text-decoration: none;
+    transition-duration: 0.35s;
+    display: flex;
+    flex-direction: end;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.scrollerContainer a:hover p {
+    opacity: 1;
+    font-weight: bold;
+    background-color: rgb(185, 185, 185);
+}
+
+.scrollerContainer a:hover span {
+    opacity: 1;
+    background-color: rgb(34, 34, 34);
+}
+
+.scrollerContainer span {
+    content: " ";
+    background-color: transparent;
+    border: 2px solid rgb(94, 94, 94);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.75;
+    transition-duration: 0.55s;
 }
 
 /* About Me */
