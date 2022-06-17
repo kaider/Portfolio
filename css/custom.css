@@ -474,8 +474,7 @@ a[data-fancybox] img {
 /* Individual case study */
 #CW_Research,
 #VTP_Research,
-#TD_Research,
-#AFA_Overview {
+#TD_Research {
     margin-bottom: 9.375rem;
     padding-top: 3rem;
 }
@@ -554,6 +553,10 @@ a[data-fancybox] img {
     width: 25%;
 }
 
+#AFA_Ideation {
+    padding-top: 9.375rem;
+}
+
 #AFA_Ideation img {
     padding: 1rem 0 9.375rem 4rem;
     margin-bottom: 3rem;
@@ -614,7 +617,6 @@ a[data-fancybox] img {
 .scrollerContainer a:focus p {
     opacity: 1;
     font-weight: bold;
-    background-color: rgb(185, 185, 185);
 }
 
 .scrollerContainer span {

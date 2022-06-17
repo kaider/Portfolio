@@ -69,7 +69,25 @@ Fancybox.bind('[data-fancybox="gallery"]', {
 
 // scroller bar
 const sections = document.querySelectorAll('section');
+console.log(sections);
 const scroller = document.querySelectorAll('.scrollerBtn');
+
+const sectionWatcherCallback = (sections, sectionWatcher) => {
+    sections.forEach(sections => {
+        if (!sections.isIntersecting) {return};
+        activeSectionHandler(sections.target.id);
+    })
+};
+
+const sectionWatcherOptions = {
+    threshold: .25
+};
+
+const sectionWatcher = new IntersectionObserver(sectionWatcherCallback, sectionWatcherOptions);
+
+sections.forEach(sections => {
+    sectionWatcher.observe(sections);
+});
 
 const activeSectionHandler = (currentSectionID) => {
     scroller.forEach(link => {
@@ -79,22 +97,4 @@ const activeSectionHandler = (currentSectionID) => {
         }
         link.classList.remove('scrollerActive');
     })
-}
-
-    // intersection observer
-const sectionWatcherCallback = (section, sectionWatcher) => {
-    section.forEach(section => {
-        if (!section.isIntersecting) {return};
-        activeSectionHandler(section.target.id);
-    })
-}
-
-const sectionWatcherOptions = {
-    threshold: .5
-}
-
-const sectionWatcher = new IntersectionObserver(sectionWatcherCallback, sectionWatcherOptions)
-
-sections.forEach(section => {
-    sectionWatcher.observe(section);
-});
+};
