@@ -67,20 +67,28 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   },
 });
 
-// scroller bar
+// scroller bar fade
+window.addEventListener('scroll', function(){
+    var scroll = document.querySelector('.scrollerContainer');
+    scroll.classList.toggle("active", window.scrollY > 1700)
+});
+
+// scroller bar responsive
 const sections = document.querySelectorAll('section');
 console.log(sections);
 const scroller = document.querySelectorAll('.scrollerBtn');
 
 const sectionWatcherCallback = (sections, sectionWatcher) => {
-    sections.forEach(sections => {
-        if (!sections.isIntersecting) {return};
-        activeSectionHandler(sections.target.id);
+    sections.forEach(section => {
+        if (!section.isIntersecting) {return};
+        activeSectionHandler(section.target.id);
     })
 };
 
+// scroll bar intersection observer
 const sectionWatcherOptions = {
-    threshold: .25
+    threshold: .20,
+    rootMargin: '100px',
 };
 
 const sectionWatcher = new IntersectionObserver(sectionWatcherCallback, sectionWatcherOptions);
