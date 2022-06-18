@@ -186,11 +186,11 @@
 }
 
 .projects-section .featured-text-right {
-    padding: 0 0 0 6rem;
+    padding: 0 0 0 3rem;
 }
 
 .projects-section .featured-text-left {
-    padding: 0 6rem 0 0;
+    padding: 0 3rem 0 0;
 }
 
 /* leading line following line */
@@ -224,53 +224,60 @@
 
 /* UX Case thumbnails */
 .UXCase {
-  margin: 0 0 12.5rem 0;
+    margin: 0 0 6rem 0;
+    flex: 0 0 auto;
+    width: 83.33333333%;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 
 .UXCaseTitle {
-  margin: 2rem 0 1.5rem 0;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.25px;
-  font-size: 1.55rem;
+    margin: 2rem 0 1.5rem 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    font-size: 1.55rem;
 }
 
-img.UXCaseImg {
-  cursor: pointer;
-  width: 100%;
-  height: auto;
-  -webkit-animation-delay: 0.25s !important;
-  animation-delay: 0.25s !important;
-  -webkit-transition: all 0.35s;
-  -o-transition: all 0.35s;
-  transition: all 0.35s;
-  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.15)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+.UXCaseImg {
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.15)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
 }
 
-img.UXCaseImg:hover {
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.35)) drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.45)); 
+.UXCaseImg img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    -webkit-animation-delay: 0.25s !important;
+    animation-delay: 0.25s !important;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.UXCaseImg:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 div.UXCaseLabel {
-  flex-direction: row;
-  align-items: center;
-  display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
 }
 
 .UXCaseLabel p {
-  color: #9D9D9D;
-  border: 1px solid #9D9D9D;
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.25px;
-  border-radius: 5px;
-  padding: 4px 10px;
-  margin: 0 8px 0 0;
+    color: #9D9D9D;
+    border: 1px solid #9D9D9D;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin: 0 8px 0 0;
 }
 
 .UXCaseNav {
@@ -474,8 +481,7 @@ a[data-fancybox] img {
 /* Individual case study */
 #CW_Research,
 #VTP_Research,
-#TD_Research,
-#AFA_Overview {
+#TD_Research {
     margin-bottom: 9.375rem;
     padding-top: 3rem;
 }
@@ -554,8 +560,12 @@ a[data-fancybox] img {
     width: 25%;
 }
 
+#AFA_Ideation {
+    padding-top: 9.375rem;
+}
+
 #AFA_Ideation img {
-    padding: 1rem 4rem 9.375rem 4rem;
+    padding: 1rem 0 9.375rem 4rem;
     margin-bottom: 3rem;
 }
 
@@ -582,6 +592,87 @@ a[data-fancybox] img {
     color: white;
     font-weight: 400;
     padding-bottom: 1rem;
+}
+
+/* Page Scroller */
+.scrollerContainer {
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(-5% , -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollerContainer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.scrollerContainer p {
+    margin: 0;
+    opacity: 0.25;
+    transition-duration: 0.35s;
+    padding: 2px 10px;
+}
+
+.scrollerContainer a {
+    padding: 0.2rem;
+    text-decoration: none;
+    transition-duration: 0.35s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.scrollerContainer a:hover p,
+.scrollerContainer a:focus p {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.scrollerContainer span {
+    content: " ";
+    background-color: transparent;
+    border: 1px solid rgb(94, 94, 94);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+}
+
+.scrollerContainer span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 2px;
+    border-radius: 2px;
+    transition-duration: 0.55s;
+    opacity: 0;
+    background-color: var(--bs-gray-700);
+}
+
+.scrollerContainer a:hover span::after,
+.scrollerContainer a:focus span::after {
+    opacity: 1;
+}
+
+.scrollerContainer .scrollerActive p {
+    opacity: 1;
+    font-weight: bold;
+    color: var(--bs-gray-700);
+    background-color: var(--bs-gray-200);
+}
+
+.scrollerContainer .scrollerActive span::after {
+    opacity: 1;
 }
 
 /* About Me */

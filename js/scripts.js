@@ -66,3 +66,75 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     },
   },
 });
+
+// scroller bar fade
+window.addEventListener('scroll', function(){
+    var scroll = document.querySelector('.scrollerContainer');
+    scroll.classList.toggle("active", window.scrollY > 1700)
+});
+
+// scroller bar responsive
+const sections = document.querySelectorAll('section');
+console.log(sections);
+const scroller = document.querySelectorAll('.scrollerBtn');
+
+const sectionWatcherCallback = (sections, sectionWatcher) => {
+    sections.forEach(section => {
+        if (!section.isIntersecting) {return};
+        activeSectionHandler(section.target.id);
+    })
+};
+
+// scroll bar intersection observer
+const sectionWatcherOptions = {
+    threshold: .20,
+    rootMargin: '100px',
+};
+
+const sectionWatcher = new IntersectionObserver(sectionWatcherCallback, sectionWatcherOptions);
+
+sections.forEach(sections => {
+    sectionWatcher.observe(sections);
+});
+
+const activeSectionHandler = (currentSectionID) => {
+    scroller.forEach(link => {
+        if(link.dataset.section === currentSectionID) {
+            link.classList.add('scrollerActive');
+            return;
+        }
+        link.classList.remove('scrollerActive');
+    })
+};
+
+// lazy loader
+const images = document.querySelectorAll('[data-src]');
+
+function preloadImage(img) {
+    const src = img.getAttribute('data-src');
+    if(!src) {
+        return;
+    }
+
+    img.src = src;
+}
+
+const imgOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px 300px 0px"
+};
+
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            preloadImage(entry.target);
+            imgObserver.unobserve(entry.target);
+        }
+    })
+}, imgOptions);
+
+images.forEach(image => {
+    imgObserver.observe(image)
+});
