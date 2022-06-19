@@ -7,7 +7,7 @@ https://kaider.github.io/Portfolio
 1. ~~Add navigation to UX case study~~ for now, need better UI
 2. ~~Lazy load~~
 3. Add bootstrap collapse to Gallery
-4. Add parallax
+4. Add parallax **In Progress**
 5. Clean up **In Progress**
 6. Migrate keyboard write-ups to the website
 7. React.JS
