@@ -8,6 +8,6 @@ https://kaider.github.io/Portfolio
 2. ~~Lazy load~~
 3. Add bootstrap collapse to Gallery
 4. Add parallax
-5. Clean up
+5. Clean up **In Progress**
 6. Migrate keyboard write-ups to the website
 7. React.JS

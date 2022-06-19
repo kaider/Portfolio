@@ -285,6 +285,8 @@ div.UXCaseLabel {
     align-items: center;
     margin: 5rem 0 3rem 0;
     padding: 2rem 0 0 0;
+    display: flex;
+    flex-flow: row;
 }
 
 .UXCaseNav a {
@@ -306,6 +308,8 @@ div.UXCaseLabel {
     border-radius: 0.5rem;
     padding: 2.5rem 0;
     margin: 0 5rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .UXCaseSwap {
@@ -505,11 +509,20 @@ a[data-fancybox] img {
 
 #CW_Ideation .btn {
     border: none;
-    padding: 10px 15px;
+    padding: 10px 25px;
     background-color: #594736;
     color: white;
     font-weight: 400;
     font-size: 0.8rem;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+    transform: translate(0, 0);
+}
+
+#CW_Ideation .btn:active {
+    background-color: #3b2f24;
+    color: var(--bs-gray-400);
+    box-shadow: none;
+    transform: translate(2px, 2px);
 }
 
 #VTP_Definition,
@@ -565,7 +578,7 @@ a[data-fancybox] img {
 }
 
 #AFA_Ideation img {
-    padding: 1rem 0 9.375rem 4rem;
+    padding: 1rem 0 5rem 0;
     margin-bottom: 3rem;
 }
 
@@ -900,6 +913,7 @@ a[data-tool-tip]:hover::after {
     }
     .UXCase {
         margin: 0 0 8rem 0;
+        width: 100%;
     }
     .UXCaseTitle {
         font-size: 1.3rem;
@@ -919,7 +933,7 @@ a[data-tool-tip]:hover::after {
         padding: 3rem 0.5rem 0 0.5rem;
     }
     #AFA_Ideation img {
-        padding: 0 1.5rem 7rem 1.5rem;
+        padding: 0;
     }
 
     .aboutMeTitle {
@@ -973,9 +987,6 @@ a[data-tool-tip]:hover::after {
     #VTP_Ideation img {
         padding: 0;
     }
-    #AFA_Ideation img {
-        padding: 0 0 4.5rem 0;
-    }
     .aboutMeTitle {
         padding-top: 9rem;
         padding-left: 1rem;
@@ -1002,6 +1013,13 @@ a[data-tool-tip]:hover::after {
         display: block;
         margin: 0 6vw 2rem 6vw;
         font-size: 0.95rem;
+    }
+
+    .UXCaseTeam {
+        padding: 2.5rem 1rem;
+        max-width: 70%;
+        min-width: fit-content;
+        flex-flow: column;
     }
     #AFA_Research img {
         width: 85%;
@@ -1033,6 +1051,14 @@ a[data-tool-tip]:hover::after {
     #AFA_Prototyping .galleryMain {
         margin: 0 auto 1rem auto;
         padding: 1.5rem;
+    }
+    #AFA_Prototyping .galleryProduct {
+        padding: 5px;
+    }
+
+    #AFA_Prototyping .galleryInfo {
+        bottom: 5px;
+        width: calc(100% - 10px);
     }
 
     .aboutMe .hero-section {
