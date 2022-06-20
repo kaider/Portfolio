@@ -171,16 +171,17 @@ images.forEach(image => {
 });
 
 // font awesome on click
-document.querySelector('.imgBtn').addEventListener('click', function() {
-    const icon = this.querySelector('i');
-  
-    if (icon.classList.contains('fa-plus')) {
-        console.log("plus")
-        icon.classList.remove('fa-plus');
-        icon.classList.add('fa-minus');
-    } else {
-        console.log("minus")
-        icon.classList.remove('fa-minus');
-        icon.classList.add('fa-plus');
-    }
+const imgBtns = document.querySelectorAll('.imgBtn');
+
+imgBtns.forEach(function(imgBtn){
+    imgBtn.addEventListener('click', function(e){
+        const icon = this.querySelector('i');
+        if (icon.classList.contains('fa-plus')) {
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+        } else {
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+        }
+    });
 });
