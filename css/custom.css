@@ -514,13 +514,17 @@ a[data-fancybox] img {
 }
 
 #illustrations .imgBtn {
-    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: var(--bs-gray-100);
     background-color: transparent;
     font-weight: 400;
     font-size: 0.9rem;
     padding: 1rem 0;
+    border:none;
     border-top: 1px solid var(--bs-gray-500);
+
 }
 
 /* Individual case study */

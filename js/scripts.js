@@ -54,6 +54,19 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+// font awesome on click
+document.querySelector('imgBtn').addEventListener('click', function() {
+    const icon = this.querySelector('i');
+  
+    if (icon.classList.contains('fa-plus')) {
+        icon.classList.remove('fa-plus');
+        icon.classList.add('fa-minus');
+    } else {
+        icon.classList.remove('fa-minus');
+        icon.classList.add('fa-plus');
+    }
+});
+
 // Copyright year
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
@@ -168,14 +181,4 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 
 images.forEach(image => {
     imgObserver.observe(image)
-});
-
-// image gallery collapse
-$(".imgBtn").on("click", function(){
-    $(".imgBtn").toggleClass("active");
-    if ($(".imgBtn").hasClass("active")) {
-        $(".fa-solid").removeClass("fa-plus").addClass("fa-minus");
-    } else {
-        $(".fa-solid").removeClass("fa-minus").addClass("fa-plus");
-    }
 });
