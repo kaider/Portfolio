@@ -107,6 +107,37 @@ const activeSectionHandler = (currentSectionID) => {
     })
 };
 
+// main page + about animation
+const faders = document.querySelectorAll(".fade-in");
+const sliders = document.querySelectorAll(".slide-in");
+
+const appearOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -250px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(
+    entries,
+    appearOnScroll
+) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+        }
+    });
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
+
+sliders.forEach(slider => {
+    appearOnScroll.observe(slider);
+});
+
 // lazy loader
 const images = document.querySelectorAll('[data-src]');
 
@@ -137,4 +168,14 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 
 images.forEach(image => {
     imgObserver.observe(image)
+});
+
+// image gallery collapse
+$(".imgBtn").on("click", function(){
+    $(".imgBtn").toggleClass("active");
+    if ($(".imgBtn").hasClass("active")) {
+        $(".fa-solid").removeClass("fa-plus").addClass("fa-minus");
+    } else {
+        $(".fa-solid").removeClass("fa-minus").addClass("fa-plus");
+    }
 });

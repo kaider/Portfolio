@@ -229,10 +229,11 @@
     width: 83.33333333%;
     margin-right: auto !important;
     margin-left: auto !important;
+    position: relative;
 }
 
 .UXCaseTitle {
-    margin: 2rem 0 1.5rem 0;
+    margin: 0 0 1.5rem 0;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     letter-spacing: 0.25px;
@@ -330,6 +331,36 @@ div.UXCaseLabel {
 
 .UXCaseSwap .hvr-sweep {
     font-size: 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.35s ease-in;
+}
+  
+.fade-in.appear {
+    opacity: 1;
+}
+
+.from-left {
+    transform: translateX(-70%);
+}
+
+.from-right {
+    transform: translateX(70%);
+}
+
+.from-left,
+.from-right {
+    transition: opacity 0.35s ease-in, transform 0.45s ease-in;
+    opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /* Fancybox Image Gallery */
@@ -482,6 +513,16 @@ a[data-fancybox] img {
     column-gap:10px;
 }
 
+#illustrations .imgBtn {
+    border: none;
+    color: var(--bs-gray-100);
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--bs-gray-500);
+}
+
 /* Individual case study */
 #CW_Research,
 #VTP_Research,
@@ -516,7 +557,7 @@ a[data-fancybox] img {
     font-size: 0.8rem;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
     transform: translate(0, 0);
-    transition: 0s 0.35s;
+    transition: 0s 0.30s;
 }
 
 #CW_Ideation .btn:active {
@@ -616,6 +657,7 @@ a[data-fancybox] img {
 
 /* Page Scroller */
 .scrollerContainer {
+    display: block;
     z-index: 100;
     position: fixed;
     right: 0;
@@ -1066,6 +1108,10 @@ a[data-tool-tip]:hover::after {
     #AFA_Prototyping .galleryInfo {
         bottom: 5px;
         width: calc(100% - 10px);
+    }
+
+    .scrollerContainer {
+        display: none;
     }
 
     .aboutMe .hero-section {
