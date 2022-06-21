@@ -529,22 +529,21 @@ a[data-fancybox] img {
 
 .iconFA::after{
     content: "\2b";
-    display: inline-block;
     font-family: "Font Awesome 5 Free";
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font-weight: 900;
-    font-size: 1rem;
+    font-size: 0.75rem;
     padding: 0;
 }
 
 .iconFAminus::after{
     content: "\f068";
-    display: inline-block;
     font-family: "Font Awesome 5 Free";
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     font-weight: 900;
+    font-size: 0.75rem;
     padding: 0;
 }
 
