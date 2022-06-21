@@ -174,14 +174,14 @@ images.forEach(image => {
 const imgBtns = document.querySelectorAll('.imgBtn');
 
 imgBtns.forEach(function(imgBtn){
-    imgBtn.addEventListener('click', function(e){
-        const icon = this.querySelector('i');
-        if (icon.classList.contains('fa-plus')) {
-            icon.classList.remove('fa-plus');
-            icon.classList.add('fa-minus');
+    imgBtn.addEventListener('click', function(){
+        const iconFA = this.querySelector("span")
+        if (iconFA.classList.contains("iconFA")) {
+            iconFA.classList.add("iconFAminus");
+            iconFA.classList.remove("iconFA");
         } else {
-            icon.classList.remove('fa-minus');
-            icon.classList.add('fa-plus');
+            iconFA.classList.remove("iconFAminus");
+            iconFA.classList.add("iconFA");
         }
     });
 });
