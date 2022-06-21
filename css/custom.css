@@ -766,8 +766,8 @@ a[data-fancybox] img {
     font-family: 'IBM Plex Serif', sans-serif !important;
     font-style: normal !important;
     font-weight: 700 !important;
-    font-size: calc(1.25rem + 2vw) !important;
-    line-height: calc(1.35rem + 2vw);
+    font-size: calc(1.35rem + 1vw) !important;
+    line-height: calc(1.15rem + 1vw);
     letter-spacing: 0.25px;
     margin: 0;
 }
@@ -781,8 +781,8 @@ a[data-fancybox] img {
 .aboutMeIntro h1 {
     font-family: 'IBM Plex Serif', sans-serif !important;
     font-weight: 300;
-    font-size: calc(1.6rem + 4vw);
-    line-height: calc(1.25rem + 4.5vw);
+    font-size: calc(1.2rem + 4vw);
+    line-height: calc(1.15rem + 4.5vw);
     letter-spacing: -1px;
     text-align: right;
     margin: 0;
