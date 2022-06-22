@@ -2177,7 +2177,7 @@ progress {
   text-decoration: none;
   padding: 0.5rem 0;
   font-weight: 600;
-  font-size: 18px;
+  /* font-size: 18px; */
   color: rgb(17,17,17);
   border-bottom: 3px solid rgb(17,17,17);
   letter-spacing: 0.05rem;

@@ -87,7 +87,7 @@
     outline: none;
     background-color: transparent;
     /*  font-family: Lato; */
-    font-weight: 900;
+    /* font-weight: 900; */
     /*  letter-spacing: 0.25px; */
 }
 
@@ -717,7 +717,7 @@ a[data-fancybox] img {
 .scrollerContainer a:hover p,
 .scrollerContainer a:focus p {
     opacity: 1;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .scrollerContainer span {
@@ -752,9 +752,9 @@ a[data-fancybox] img {
 
 .scrollerContainer .scrollerActive p {
     opacity: 1;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--bs-gray-700);
-    background-color: var(--bs-gray-200);
+    /* background-color: var(--bs-gray-200); */
 }
 
 .scrollerContainer .scrollerActive span::after {
