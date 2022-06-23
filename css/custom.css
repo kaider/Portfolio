@@ -499,8 +499,8 @@ a[data-fancybox] img {
 }
 
 .picturesTrad img {
-    max-height: calc(6.25rem + 8vw);
-    object-fit: cover;
+    max-height: calc(4rem + 8vw);
+    /* object-fit: cover; */
 }
 
 .picturesTrad,
