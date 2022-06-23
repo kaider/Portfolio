@@ -1149,8 +1149,9 @@ a[data-tool-tip]:hover::after {
         filter: none;
         margin-bottom: 5px;
     }
-
-    .pictures3Da {
+	
+    .pictures3Da,
+    .picturesTrad {
         -webkit-column-count:1;
         -moz-column-count:1;
         column-count:1;
@@ -1159,7 +1160,6 @@ a[data-tool-tip]:hover::after {
         column-gap:0;
     }
 
-    .picturesTrad,
     .pictures3Db {
         -webkit-column-count:2;
         -moz-column-count:2;
