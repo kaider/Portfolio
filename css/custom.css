@@ -500,7 +500,7 @@ a[data-fancybox] img {
 
 .picturesTrad img {
     max-height: calc(4rem + 8vw);
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 .picturesTrad,
