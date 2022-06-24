@@ -499,7 +499,7 @@ a[data-fancybox] img {
 }
 
 .picturesTrad img {
-    max-height: calc(4rem + 8vw);
+    max-height: calc(6rem + 25vw);
     object-fit: cover;
 }
 
