@@ -130,7 +130,7 @@
     font-family: 'Playfair Display', serif !important;
     font-weight: 700;
     font-size: calc(1.25rem + 3vw);
-    line-height: calc(1.5rem + 3vw);
+    line-height: calc(2.5rem + 3vw);
     letter-spacing: 0.25px;
     background: #141610;
     -webkit-text-fill-color: transparent;
