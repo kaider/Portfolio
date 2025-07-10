@@ -11,3 +11,9 @@ https://kaider.github.io/Portfolio
 5. Clean up **In Progress**
 6. Migrate keyboard write-ups to the website
 7. React.JS
+
+## Running Tests
+
+1. Install dependencies using `npm install`.
+2. Execute the test suite with `npm test`.
+
