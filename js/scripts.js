@@ -73,7 +73,7 @@ window.addEventListener('scroll', function(){
     scroll.classList.toggle("active", window.scrollY > 1700)
 });
 
-// scroller bar responsive
+// highlight active scroller buttons while scrolling
 const sections = document.querySelectorAll('section');
 const scroller = document.querySelectorAll('.scrollerBtn');
 
