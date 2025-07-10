@@ -75,7 +75,6 @@ window.addEventListener('scroll', function(){
 
 // scroller bar responsive
 const sections = document.querySelectorAll('section');
-console.log(sections);
 const scroller = document.querySelectorAll('.scrollerBtn');
 
 const sectionWatcherCallback = (sections, sectionWatcher) => {
@@ -118,14 +117,14 @@ const appearOptions = {
 
 const appearOnScroll = new IntersectionObserver(function(
     entries,
-    appearOnScroll
+    observer
 ) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return;
         } else {
             entry.target.classList.add('appear');
-            appearOnScroll.unobserve(entry.target);
+            observer.unobserve(entry.target);
         }
     });
 }, appearOptions);
