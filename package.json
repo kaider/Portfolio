@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  <<<<<<< codex/set-up-jest-and-create-tests
   "description": "Portfolio project",
   "main": "index.js",
   "scripts": {
@@ -12,5 +13,13 @@
   "jest": {},
   "devDependencies": {
     "jest": "^29.6.2"
+  =======
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jsdom": "^21.1.0"
+  >>>>>>> main
   }
 }
