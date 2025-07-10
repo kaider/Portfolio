@@ -12,6 +12,14 @@ https://kaider.github.io/Portfolio
 6. Migrate keyboard write-ups to the website
 7. React.JS
 
-## Running tests
+  <<<<<<< codex/set-up-jest-and-create-tests
+  ## Running Tests
 
-Install dependencies with `npm install` and run the test suite using `npm test`.
+  1. Install dependencies using `npm install`.
+  2. Execute the test suite with `npm test`.
+
+  =======
+  ## Running tests
+
+  Install dependencies with `npm install` and run the test suite using `npm test`.
+  >>>>>>> main
